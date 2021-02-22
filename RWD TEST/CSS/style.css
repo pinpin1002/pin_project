@@ -1,0 +1,135 @@
+@import url(../CSS/reset.css);
+body {
+  background-color: #8cd2ca;
+  font-family: "微軟正黑體", Arial, Helvetica, sans-serif;
+  color: #474876;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+/* 權重? 怎麼覆蓋 
+    100Vh == width 100%?
+    */
+
+img{
+  max-width: 100%; 
+}
+
+
+h1 {
+  font-family: "田氏方筆刷体繁";
+  font-size: 58px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 14px;
+  color: #474876;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+footer {
+  height: 200px;
+  width: 100%;
+  /* min-width: 100%; */
+  background-color: #34866e;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 300px auto 0px;
+  color: white;
+  border:1px solid yellow;
+  
+}
+
+@media (max-width:767px){
+  footer{
+    width: 90%;
+  }
+}
+
+
+
+footer iframe {
+  width: 300px;
+  height: 185px;
+  border-radius: 5%;
+  margin: 0px 80px;
+}
+
+.contactinfo {
+  margin-left: 30px;
+}
+
+.contactinfo a {
+  margin-right: 10px;
+}
+
+.footer-pics {
+  height: 500px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.m1{
+  height: 150px;
+  position: absolute;
+  bottom: 130px;
+  right: 105px;
+  z-index: -1;
+}
+
+
+.m2{
+  height: 150px;
+  position: absolute;
+  bottom: 175px;
+  right: 210px;
+  z-index: -2;
+}
+
+.m3{
+  height: 160px;
+  position: absolute;
+  bottom: 140px;
+  right: 300px;
+  z-index: -3;
+}
+
+.m4{
+  height: 160px;
+  position: absolute;
+  bottom: 180px;
+  right: 780px;
+  z-index: -1;
+}
+
+.m5{
+  height: 160px;
+  position: absolute;
+  bottom: 150px;
+  right: 900px;
+  z-index: -2;
+}
+.m6{
+  height: 160px;
+  position: absolute;
+  bottom: 170px;
+  right: 980px;
+  z-index: -3;
+}
