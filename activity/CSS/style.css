@@ -79,14 +79,18 @@ a {
 }
 
 .top-header ul>li>img{
-  transform: translateY(80px);
-  transition: 1s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+    transform: translateY(80px);
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.top-header .stay{
+  transform: translateY(-15px);
 }
 
 .top-header ul>li:hover>img{

@@ -104,6 +104,11 @@ a {
   transform: translateY(-15px);
 }
 
+
+.top-header .stay{
+  transform: translateY(-15px);
+}
+
 .top-header a {
 	text-decoration: none;
 	color: #4b527c;
