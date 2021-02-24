@@ -16,8 +16,9 @@ body {
 
 
 h1 {
-  font-family: "田氏方筆刷体繁";
+  font-family: "RocknRoll One";
   font-size: 58px;
+  font-weight: normal;
 }
 
 h2 {
@@ -37,7 +38,6 @@ a {
   text-decoration: none;
   color: white;
   font-size: 26px;
-  font-weight: bold;
 }
 
 .top-header {
