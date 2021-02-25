@@ -1,0 +1,452 @@
+@import url(../CSS/reset.css);
+body {
+  width: 100%;
+  background-color: #8cd2ca;
+  font-family: "微軟正黑體", Arial, Helvetica, sans-serif;
+  color: #474876;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  overflow: hidden;
+}
+
+img{
+  max-width: 100%;
+}
+
+h1 {
+  font-family: "Stick";
+  font-size: 58px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 14px;
+  color: #474876;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.top-header {
+  background-color: #8cd2ca;
+  height: 150px;
+  position: relative;
+  padding-top: 40px;
+  font-family: "田氏方筆刷体繁";
+  margin: 0 auto;
+}
+
+@media screen and (max-width:1200px){
+  .top-header{
+    width: 100%;
+  }
+}
+
+.log a:first-child {
+  position: absolute;
+  top: 30px;
+  right: 100px;
+}
+.log a:last-child {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+
+.top-header ul {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.top-header ul li {
+  position: relative;
+  overflow: hidden;
+  width: 100px;
+  border-bottom: 3px solid transparent;
+}
+
+.top-header ul li:not(:nth-child(4)){
+  height: 100px;
+  line-height: 50px;
+}
+
+.top-header ul>li>img{
+  transform: translateY(80px);
+  transition: 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.top-header ul>li:hover>img{
+  transform: translateY(-15px);
+}
+
+
+.top-header .stay{
+  transform: translateY(-15px);
+}
+
+.top-header a {
+	text-decoration: none;
+	color: #4b527c;
+	font-size: 20px;
+	font-weight: bold;
+  position: relative;
+  z-index: 2;
+}
+
+.top-header img {
+  height: 80px;
+}
+
+.top-header a:visited {
+  color: #4b527c;
+}
+
+/* 大照片 */
+
+.main-pics {
+  background-image: url(../../img/about\ us.jpg);
+  width: 1000px;
+  height: 550px;
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+  margin: 0px auto 70px;
+  border-radius: 40px;
+}
+
+/* 我們的故事-文字區塊 */
+.text {
+  margin: 50px 0;
+  text-align: center;
+  color:white;
+}
+
+.text p {
+  margin-top: 20px;
+}
+
+/* 空間 */
+
+.space-bigpics {
+  background-image: url(../../img/space2.jpg);
+  width: 1200px;
+  height: 600px;
+  background-size: cover;
+
+  margin-top: 20px;
+
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  position: relative;
+}
+
+.space-bigpics:before {
+  content: "";
+  display: block;
+  width: 800px;
+  height: 800px;
+  background-color: rgba(59, 124, 116, 0.22);
+  border-radius: 50%;
+  position: absolute;
+  top: -150px;
+  left: 210px;
+  z-index: -1;
+}
+
+.space-intro{
+  text-align: center;
+  color:white;
+}
+
+.space-text {
+  border: 1px solid;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  text-align: center;
+
+  color: #4b527c;
+  background-color: #e5e5e5;
+
+}
+
+.space-down {
+  display: flex;
+  transition: all, 0.5s;
+  text-align: center;
+}
+
+.space-1 {
+  background-image: url(../../img/space1.jpg);
+  width: 200px;
+  height: 100px;
+  background-size: cover;
+  transition: all, 1s;
+  cursor: pointer;
+}
+.space-2 {
+  background-image: url(../../img/space2.jpg);
+  width: 200px;
+  height: 100px;
+  background-size: cover;
+
+  cursor: pointer;
+}
+.space-3 {
+  background-image: url(../../img/space3.jpg);
+  width: 200px;
+  height: 100px;
+  background-size: cover;
+
+  cursor: pointer;
+}
+.space-4 {
+  background-image: url(../../img/space4.jpg);
+  width: 200px;
+  height: 100px;
+  background-size: cover;
+
+  cursor: pointer;
+}
+.space-5 {
+  background-image: url(../../img/space5.jpg);
+  width: 200px;
+  height: 100px;
+  background-size: cover;
+
+  cursor: pointer;
+}
+.space-6 {
+  background-image: url(../../img/space6.jpg);
+  width: 200px;
+  height: 100px;
+  background-size: cover;
+
+  cursor: pointer;
+}
+
+.space-1:before {
+  content: "室內空間";
+  display: block;
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  color: #4b527c;
+  font-size: 25px;
+  line-height: 100px;
+  opacity: 0;
+  transition: all, 1s;
+}
+
+.space-2:before {
+  content: "展覽空間";
+  display: block;
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  color: #4b527c;
+  font-size: 25px;
+  line-height: 100px;
+  opacity: 0;
+  transition: all, 1s;
+}
+
+.space-3:before {
+  content: "閱讀空間";
+  display: block;
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  color: #4b527c;
+  font-size: 25px;
+  line-height: 100px;
+  opacity: 0;
+  transition: all, 1s;
+}
+
+.space-4:before {
+  content: "廁所";
+  display: block;
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  color: #4b527c;
+  font-size: 25px;
+  line-height: 100px;
+  opacity: 0;
+  transition: all, 1s;
+}
+
+.space-5:before {
+  content: "遊戲空間";
+  display: block;
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  color: #4b527c;
+  font-size: 25px;
+  line-height: 100px;
+  opacity: 0;
+  transition: all, 1s;
+}
+
+.space-6:before {
+  content: "戶外空間";
+  display: block;
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  color: #4b527c;
+  font-size: 25px;
+  line-height: 100px;
+  opacity: 0;
+  transition: all, 0.8s;
+}
+
+.space-1:hover:before,
+.space-2:hover:before,
+.space-3:hover:before,
+.space-4:hover:before,
+.space-5:hover:before,
+.space-6:hover:before {
+  opacity: 0.8;
+}
+
+/* 成員 */
+
+.staff-text {
+  margin-top: 50px;
+  text-align: center;
+  color:white;
+}
+
+.staff {
+  display: inline-flex;
+  width: 1200px;
+  justify-content: center;
+}
+
+.staff ul {
+  margin: 50px 50px;
+}
+
+.staff ul li img {
+  width: 150px;
+}
+
+.staff ul li {
+  width: 300px;
+  text-align: center;
+}
+
+/* footer */
+
+footer {
+  height: 200px;
+  width: 100%;
+  background-color: #34866e;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  margin-top: 300px;
+  color: white;
+}
+
+footer iframe {
+  width: 300px;
+  height: 185px;
+  border-radius: 5%;
+  margin: 0px 80px;
+}
+
+.contactinfo {
+  margin-left: 30px;
+}
+
+.contactinfo a {
+  margin-right: 10px;
+}
+
+.footer-pics {
+  height: 500px;
+  position: absolute;
+  bottom: 0px;
+  left: 830px;
+}
+
+.m1{
+  height: 150px;
+  position: absolute;
+  top: -130px;
+  left: 805px;
+  z-index: -1;
+}
+
+.m2{
+  height: 150px;
+  position: absolute;
+  top: -120px;
+  left: 750px;
+  z-index: -2;
+}
+
+.m3{
+  height: 160px;
+  position: absolute;
+  top: -140px;
+  left: 660px;
+  z-index: -3;
+}
+
+.m4{
+  height: 160px;
+  position: absolute;
+  top: -120px;
+  left: 320px;
+  z-index: -1;
+}
+
+.m5{
+  height: 160px;
+  position: absolute;
+  top: -110px;
+  left: 260px;
+  z-index: -2;
+}
+.m6{
+  height: 160px;
+  position: absolute;
+  top: -140px;
+  left: 140px;
+  z-index: -3;
+}

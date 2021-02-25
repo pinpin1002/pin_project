@@ -1,0 +1,330 @@
+@import url(../CSS/reset.css);
+body {
+  width: 100%;
+  background-color: #8cd2ca;
+  font-family: "微軟正黑體", Arial, Helvetica, sans-serif;
+  color: white;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Stick";
+  font-size: 58px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 14px;
+  color: #474876;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.top-header {
+  background-color: #8cd2ca;
+  width: 100%;
+  height: 150px;
+  position: relative;
+  padding-top: 40px;
+  font-family: "田氏方筆刷体繁";
+}
+
+.log a:first-child {
+  position: absolute;
+  top: 30px;
+  right: 100px;
+}
+.log a:last-child {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+
+.top-header ul {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.top-header ul li {
+  position: relative;
+  overflow: hidden;
+  width: 100px;
+  border-bottom: 3px solid transparent;
+}
+
+.top-header ul li:not(:nth-child(4)){
+  height: 100px;
+  line-height: 50px;
+}
+
+.top-header ul>li>img{
+  transform: translateY(80px);
+  transition: 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.top-header ul>li:hover>img{
+  transform: translateY(-15px);
+}
+
+
+.top-header a {
+	text-decoration: none;
+	color: #4b527c;
+	font-size: 20px;
+	font-weight: bold;
+  position: relative;
+  z-index: 2;
+}
+
+.top-header img {
+  height: 80px;
+}
+
+.top-header a:visited {
+  color: #4b527c;
+}
+
+/* 訂單確認區 */
+
+.order-confirm {
+  width: 100%;
+  background-color: pink;
+  border: 2px dashed black;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.order-confirm h2 {
+  text-align: center;
+  margin: 50px 0px;
+  color:#474876
+}
+
+.order-confirm h3 {
+  float: left;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 500px;
+  padding-left: 50px;
+  box-sizing: border-box;
+  background-color: #f37136;
+}
+
+.order-confirm h3 + h3 {
+  display: inline-block;
+  width: 696px;
+  border-left: 1px solid black;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+
+.order-confirm h4 {
+  color: red;
+  padding: 10px;
+}
+
+.left {
+  float: left;
+  margin-bottom: 50px;
+}
+
+.left img {
+  width: 135px;
+  height: 165px;
+  margin-top: 50px;
+}
+
+.left ul {
+  background-color: #f37136;
+  border: 1px dotted #474876;
+  width: 360px;
+  height: 365px;
+  margin-left: 50px;
+}
+
+.left li {
+  margin-left: 100px;
+}
+
+.right {
+  margin-top: 200px;
+}
+
+.right li {
+  margin-left: 590px;
+  margin-top: 40px;
+}
+
+.right input {
+  height: 50px;
+  width: 350px;
+  border-radius: 30px;
+  background-color: #ffefd5;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  transition: 0.5s;
+
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.right input:focus {
+  background-color: #8cd2ca;
+  color: white;
+}
+
+.right textarea {
+  width: 550px;
+  height: 140px;
+  border-radius: 30px;
+  background-color: #ffefd5;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  transition: 0.5s;
+
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.right textarea:focus {
+  background-color: #8cd2ca;
+  color: white;
+}
+
+.right ul a {
+  display: block;
+  width: 150px;
+  height: 50px;
+  border-radius: 55px;
+  text-align: center;
+  line-height: 50px;
+  color: black;
+
+  margin-left: 400px;
+}
+
+.right li:nth-child(8) a {
+  border: 2px dashed black;
+  margin-bottom: 80px;
+}
+
+.right li:nth-child(8) a:hover {
+  background-color: #f37136;
+  color: white;
+}
+
+/* footer */
+
+footer {
+  height: 200px;
+  width: 100%;
+  background-color: #34866e;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  margin-top: 300px;
+  color: white;
+}
+
+footer iframe {
+  width: 300px;
+  height: 185px;
+  border-radius: 5%;
+  margin: 0px 80px;
+}
+
+.contactinfo {
+  margin-left: 30px;
+}
+
+.contactinfo a {
+  margin-right: 10px;
+}
+
+.footer-pics {
+  height: 500px;
+  position: absolute;
+  bottom: 0px;
+  left: 830px;
+}
+
+.m1{
+  height: 150px;
+  position: absolute;
+  top: -130px;
+  left: 805px;
+  z-index: -1;
+}
+
+.m2{
+  height: 150px;
+  position: absolute;
+  top: -120px;
+  left: 750px;
+  z-index: -2;
+}
+
+.m3{
+  height: 160px;
+  position: absolute;
+  top: -140px;
+  left: 660px;
+  z-index: -3;
+}
+
+.m4{
+  height: 160px;
+  position: absolute;
+  top: -120px;
+  left: 320px;
+  z-index: -1;
+}
+
+.m5{
+  height: 160px;
+  position: absolute;
+  top: -110px;
+  left: 260px;
+  z-index: -2;
+}
+.m6{
+  height: 160px;
+  position: absolute;
+  top: -140px;
+  left: 140px;
+  z-index: -3;
+}
