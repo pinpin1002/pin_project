@@ -238,6 +238,8 @@ a {
   box-sizing: border-box;
 }
 
+
+
 footer {
   height: 200px;
   width: 100%;
@@ -258,6 +260,7 @@ footer iframe {
 
 .contactinfo {
   margin-left: 30px;
+  min-width: 300px;
 }
 
 .contactinfo a {
@@ -268,7 +271,7 @@ footer iframe {
   height: 500px;
   position: absolute;
   bottom: 0px;
-  left: 830px;
+  left: 930px;
 }
 
 .m1{
