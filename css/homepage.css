@@ -177,10 +177,16 @@ a {
   text-align: center;
 }
 
-.welcome path {
+.welcome .path1 {
   stroke-dasharray: 1440px;
   stroke-dashoffset: 1440px;
   animation: line 3s 0.4s linear forwards;
+}
+
+.welcome .path2 {
+  stroke-dasharray: 1440px;
+  stroke-dashoffset: 1440px;
+  animation: line 3s 1.5s linear forwards;
 }
 
 @keyframes line {
