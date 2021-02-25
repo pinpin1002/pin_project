@@ -10,7 +10,7 @@ body {
 
 .wrapper {
 	margin: 0 auto;
-	width: 1200px;
+	/* width: 1200px; */
 	overflow: hidden;
 }
 
@@ -121,8 +121,7 @@ a {
 }
 
 .top-main video {
-	width: 100%;
-	border-radius: 30px;
+	width: 100vw;
 }
 
 /* 活動照片 */

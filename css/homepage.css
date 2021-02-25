@@ -10,7 +10,7 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  width: 1200px;
+  /* width: 1200px; */
   overflow: hidden;
 }
 
@@ -115,20 +115,28 @@ a {
 
 /* 導覽列結束 */
 
+.house{
+  width: 80px;
+  position: absolute;
+  bottom: 0px;
+  left: 25%;
+  font-size: 0;
+}
+
+.fans{
+  width: 80px;
+  position: absolute;
+  top: -50px;
+  left: -20px;
+  font-size: 0;
+}
+
 .house img {
   height: 100px;
-  position: absolute;
-  bottom: 160px;
-  left: 260px;
-  transform: rotate(-7deg);
-  z-index: -1;
 }
 
 .fans img {
   height: 110px;
-  position: absolute;
-  bottom: 204px;
-  left: 233px;
   animation: fans 30s linear infinite;
 }
 
@@ -141,11 +149,17 @@ a {
   }
 }
 
+.castle{
+  width: 80px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0;
+}
+
 .castle img{
   height: 80px;
-  position: absolute;
-  bottom: 184px;
-  left: 560px;
 }
 
 .airballon{
@@ -290,26 +304,16 @@ a {
   height: 785px;
   position: relative;
   overflow: hidden;
-  border-radius: 0px 0px 20px 20px;
   z-index: -2;
 }
 
-.oval:first-child {
-  width: 1400px;
-  height: 300px;
-  border:1px solid #555;
-  border-radius: 50%;
-  background-color: #8cd2ca;
-  position: absolute;
-  top: 600px;
-  left: -100px;
-}
 
 
 /* 關於我們 */
 
 .ourstory-top {
   position: relative;
+  margin-top: 150px;
 }
 
 .ourstory-top h1 {

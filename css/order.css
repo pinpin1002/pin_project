@@ -10,7 +10,7 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  width: 1200px;
+  /* width: 1200px; */
   overflow: hidden;
 }
 
@@ -136,7 +136,7 @@ a {
   float: left;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  width: 500px;
+  width: 40%;
   padding-left: 50px;
   box-sizing: border-box;
   background-color: #f37136;
@@ -144,7 +144,7 @@ a {
 
 .order-confirm h3 + h3 {
   display: inline-block;
-  width: 696px;
+  width: 60%;
   border-left: 1px solid black;
   box-sizing: border-box;
   margin-bottom: 50px;
