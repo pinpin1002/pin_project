@@ -1,4 +1,4 @@
-@import url(../css/reset.css);
+@import url(./reset.css);
 body {
   width: 100%;
   background-color: #8cd2ca;
