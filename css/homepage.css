@@ -10,7 +10,6 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  /* width: 1200px; */
   overflow: hidden;
 }
 
@@ -46,8 +45,6 @@ a {
   height: 150px;
   position: relative;
   padding-top: 40px;
-  font-family: "田氏方筆刷体繁";
-  font-weight: bold;
 }
 
 .log a:first-child {
