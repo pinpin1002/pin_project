@@ -129,7 +129,7 @@ a {
 /* 大照片 */
 
 .main-pics {
-  background-image: url(../../img/bookcover1.jpg);
+  background-image: url(../img/bookcover1.jpg);
   width: 1000px;
   height: 550px;
   background-size: cover;

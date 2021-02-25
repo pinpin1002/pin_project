@@ -129,7 +129,7 @@ a {
 /* 大照片 */
 
 .main-pics {
-  background-image: url(../../img/about\ us.jpg);
+  background-image: url(../img/about\ us.jpg);
   width: 1000px;
   height: 550px;
   background-position: 50% 60%;
@@ -152,7 +152,7 @@ a {
 /* 空間 */
 
 .space-bigpics {
-  background-image: url(../../img/space2.jpg);
+  background-image: url(../img/space2.jpg);
   width: 1200px;
   height: 600px;
   background-size: cover;
@@ -207,7 +207,7 @@ a {
 }
 
 .space-1 {
-  background-image: url(../../img/space1.jpg);
+  background-image: url(../img/space1.jpg);
   width: 200px;
   height: 100px;
   background-size: cover;
@@ -215,7 +215,7 @@ a {
   cursor: pointer;
 }
 .space-2 {
-  background-image: url(../../img/space2.jpg);
+  background-image: url(../img/space2.jpg);
   width: 200px;
   height: 100px;
   background-size: cover;
@@ -223,7 +223,7 @@ a {
   cursor: pointer;
 }
 .space-3 {
-  background-image: url(../../img/space3.jpg);
+  background-image: url(../img/space3.jpg);
   width: 200px;
   height: 100px;
   background-size: cover;
@@ -231,7 +231,7 @@ a {
   cursor: pointer;
 }
 .space-4 {
-  background-image: url(../../img/space4.jpg);
+  background-image: url(../img/space4.jpg);
   width: 200px;
   height: 100px;
   background-size: cover;
@@ -239,7 +239,7 @@ a {
   cursor: pointer;
 }
 .space-5 {
-  background-image: url(../../img/space5.jpg);
+  background-image: url(../img/space5.jpg);
   width: 200px;
   height: 100px;
   background-size: cover;
@@ -247,7 +247,7 @@ a {
   cursor: pointer;
 }
 .space-6 {
-  background-image: url(../../img/space6.jpg);
+  background-image: url(../img/space6.jpg);
   width: 200px;
   height: 100px;
   background-size: cover;

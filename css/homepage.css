@@ -149,7 +149,7 @@ a {
 }
 
 .airballon{
-  background-image: url(../../img/airballon.png);
+  background-image: url(../img/airballon.png);
   width: 163px;
   height: 212px;
   position: absolute;
@@ -315,7 +315,7 @@ a {
 }
 
 .ourstory-down {
-  background-image: url(../../img/about\ us.jpg);
+  background-image: url(../img/about\ us.jpg);
   width: 1080px;
   height: 580px;
   background-repeat: no-repeat;
@@ -340,7 +340,7 @@ a {
 }
 
 .light-1 {
-  background-image: url(../../img/christmas-304506_640.png);
+  background-image: url(../img/christmas-304506_640.png);
   width: 640px;
   height: 320px;
   background-repeat: no-repeat;
@@ -351,7 +351,7 @@ a {
   z-index: -1;
 }
 .light-2 {
-  background-image: url(../../img/christmas-304506_640.png);
+  background-image: url(../img/christmas-304506_640.png);
   width: 640px;
   height: 320px;
   background-repeat: no-repeat;
@@ -555,7 +555,7 @@ a {
 }
 
 .news_1 ul a:hover {
-  background-color: orange;
+  background-color: #f37136;
   color: #474876;
 }
 

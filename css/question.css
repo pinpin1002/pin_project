@@ -126,7 +126,7 @@ a {
 }
 
 .main-pics {
-  background-image: url(../../img/question1.jpg);
+  background-image: url(../img/question1.jpg);
   width: 1000px;
   height: 550px;
   background-size: cover;
