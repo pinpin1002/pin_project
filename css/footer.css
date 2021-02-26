@@ -1,6 +1,7 @@
 footer {
   height: 200px;
   width: 100%;
+  min-width: 1200px;
   background-color: #34866e;
   display: inline-flex;
   align-items: center;
