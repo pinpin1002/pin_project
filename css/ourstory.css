@@ -35,6 +35,7 @@
 
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  transition: 1.3s;
 
   position: relative;
 }
@@ -227,8 +228,9 @@
 }
 
 .staff {
-  display: inline-flex;
+  display: flex;
   width: 1200px;
+  margin: 0 auto;
   justify-content: center;
 }
 

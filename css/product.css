@@ -122,6 +122,13 @@ span{
   text-align: left;
   padding-left: 35px;
   color:#4B527C;
+ 
+}
+
+.product-items .item h3:nth-of-type(4){
+  color: #4B527C;
+ letter-spacing: 5px;
+
 }
 
 .product-items .item img{
