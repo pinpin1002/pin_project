@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>常見問答</title>
-    <link rel="shortcut icon" href="../img/favico.ico.ico"/>
+    <link rel="shortcut icon" href="../img/favico.ico.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"/>
+      rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./css/question.css" />
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/question.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/header.css">
   </head>
@@ -51,49 +51,67 @@
       <div class="main-pics"></div>
       <div class="searchbar">
         <i class="fa fa-search" aria-hidden="true"></i>
-        <input type="text" placeholder="你的疑問是?" />
+        <input type="text" placeholder="你的疑問是?">
       </div>
     <div class="question-block">
       <ul>
         <li id="q-toggle1" class="question1"><h3>問題1：忘記帳號?</h3></li>
         <li id="a-toggle1" class="answer1"><h3>請撥打付費客服專線: 0800-995-995。</h3></li>
-      </ul>
-      <ul>
         <li id="q-toggle2" class="question1"><h3>問題2：忘記密碼?</h3></li>
         <li id="a-toggle2" class="answer1"><h3>請撥打付費客服專線: 0800-995-995。</h3></li>
-      </ul>
-      <ul>
         <li id="q-toggle3" class="question1"><h3>問題3：怎麼購買繪本?</h3></li>
         <li id="a-toggle3" class="answer1"><h3>請撥打付費客服專線: 0800-995-995。</h3></li>
-      </ul>
-      <ul>
         <li id="q-toggle4" class="question1"><h3>問題4：怎麼預約故事屋?</h3></li>
         <li id="a-toggle4" class="answer1"><h3>請撥打付費客服專線: 0800-995-995。</h3></li>
       </ul>
-
     </div>
 
-      <div class="contactus">
-        <h2>聯絡我們</h2>
+    <form class="contactus" action="">
+      <h2>聯絡我們</h2>
+      <ul>
+        <li>
+          <label for="name">
+            <h3>您的名字：</h3>
+          </label>
+        </li>
+        <li>
+          <input type="text" name="name" id="name" />
+        </li>
+      </ul>
         <ul>
-          <li><label for="name"><h3>您的名字：</h3></label></li>
-          <li><input type="text" name="name" id="name" /></li>
+          <li>
+            <label for="phone">
+              <h3>您的電話：</h3>
+            </label>
+          </li>
+          <li>
+            <input type="text" name="phone" id="phone"/>
+          </li>
         </ul>
         <ul>
-          <li><label for="phone"><h3>您的電話：</h3></label></li>
-          <li><input type="text" name="phone" id="phone"/></li>
+          <li>
+            <label for="email">
+              <h3>Email：</h3>
+            </label>
+          </li>
+          <li>
+            <input type="text" name="email" id="email">
+          </li>
         </ul>
         <ul>
-          <li><label for="email"><h3>Email：</h3></label></li>
-          <li><input type="text" name="email" id="email" /></li>
+          <li>
+            <label for="message">
+              <h3>留言：</h3>
+            </label>
+          </li>
+          <li>
+            <textarea name="message" id="message" cols="30" rows="10">
+            </textarea>
+          </li>
         </ul>
-        <ul>
-          <li><label for="message"><h3>留言：</h3></label></li>
-          <li><textarea name="message" id="message" cols="30" rows="10"></textarea></li>
-        </ul>
-      </div>
-      
-    </div>
+        <input type="submit" value="送出">
+
+    </form>
     <footer>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2477183519422!2d121.22282561414355!3d24.957685184008167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ea50c732a5%3A0x1b5e6ee66e9fec49!2z57ev6IKyVGliYU1l6ZmE6Kit5Lit5aOi6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1612595258593!5m2!1szh-TW!2stw"

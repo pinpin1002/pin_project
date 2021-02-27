@@ -11,7 +11,7 @@ body h1{
 }
 
 .top-main video {
-	width: 100vw;
+	width: 100%;
 }
 
 /* 活動照片 */
@@ -29,6 +29,10 @@ body h1{
 .sec-block_text h1 a:hover {
 	transition: 0.3s;
 	color: #f37136;
+}
+
+.sec-block_text h1:first-child a{
+	color:#f37136;
 }
 
 .sec-block_pics {
@@ -81,7 +85,11 @@ body h1{
 .page span {
 	margin: 0 7px;
 	line-height: 1;
-	font-size: 20px;
+}
+
+.page a:nth-child(2){
+	color: #f37136;
+	font-size: 25px;
 }
 
 .page span {

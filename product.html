@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>繪本</title>
-    <link rel="shortcut icon" href="../img/favico.ico.ico"/>
+    <link rel="shortcut icon" href="../img/favico.ico.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"/>
+      rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./css/product.css" />
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/product.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/header.css">
   </head>
@@ -50,19 +50,19 @@
         </div>
       </div>
       <div class="main-pics"></div>
+
+      
       <div class="product-text">
+
         <div class="searchbar">
           <i class="fa fa-search" aria-hidden="true"></i>
           <input type="text" placeholder="搜尋商品" >
         </div>
 
         <div class="product-serch">
-        <span>所有繪本</span>
+          <span>所有繪本</span>
+          <span class="category">各年齡層繪本</span>
         </div>
-
-        <div class="product-serch_cate">
-          <span>各年齡層繪本</span>
-        </div> 
 
         <div class="product-cate_items">
           <ul>
@@ -161,7 +161,7 @@
     <script>
 
       $(document).ready(function(){
-      $('.product-serch_cate').on('click', function(){
+      $('.category').on('click', function(){
         $('.product-cate_items').toggle(500);
       });
 

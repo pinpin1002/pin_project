@@ -31,8 +31,11 @@ body h2, h3{
 /* 問題列 */
 
 .searchbar {
-  margin-left: 100px;
   position: relative;
+  width: 1000px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .searchbar .fa-search {
@@ -51,10 +54,7 @@ body h2, h3{
   outline: none;
   border: none;
   font-size: 20px;
-  margin-bottom: 30px;
-  margin-left: 30px;
   transition: 0.5s;
-
   padding: 20px 20px 20px 50px;
   box-sizing: border-box;
 
@@ -105,7 +105,7 @@ body h2, h3{
   text-align: center;
 }
 
-.contactus input {
+.contactus input[type="text"] {
   height: 50px;
   width: 350px;
   border-radius: 30px;
@@ -117,6 +117,24 @@ body h2, h3{
 
   padding: 20px;
   box-sizing: border-box;
+}
+
+.contactus input[type="submit"]{
+  display: block;
+  margin: 0 auto;
+  height: 30px;
+  width: 70px;
+  border-radius: 10px;
+  background-color: #F37136;
+  color:#4B527C;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.5s;
+
+  box-sizing: border-box;
+  border:1px solid black;
 }
 
 .contactus input:focus {

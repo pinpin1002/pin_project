@@ -32,7 +32,7 @@ span{
 
 .searchbar input {
   height: 50px;
-  width: 250px;
+  width: 230px;
   line-height: 50;
   border-radius: 30px;
   background-color: #F37136;
@@ -51,7 +51,10 @@ span{
 }
 
 .product-text {
-  margin: 100px 150px 10px;
+  width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
 }
 
 .product-text span {
@@ -63,11 +66,10 @@ span{
   display: inline-block;
 }
 
-.product-serch_cate{
-  display: inline-block;
-  margin-left: 50px;
+.product-serch span:first-child{
+  color:#F37136;
+  margin-right: 40px;
 }
-
 
 .product-cate_items{
   display: none;
