@@ -17,32 +17,41 @@ span{
 
 /* 商品區 */
 
-.searchbar {
-  margin-left: 680px;
-  margin-bottom: 60px;
-  position: relative;
+
+.product {
+  width: 1200px;
+  margin: 0 auto;
 }
 
-.searchbar .fa-search {
+.searchbar {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.searchbar button {
   position: absolute;
+  right: 25px;
   top: 17px;
-  left: 200px;
+  border:0px;
+  background-color: #F37136;
   cursor: pointer;
 }
 
 .searchbar input {
   height: 50px;
-  width: 230px;
-  line-height: 50;
-  border-radius: 30px;
+  width: 250px;
+  line-height: 50px;
+  border-radius: 15px;
   background-color: #F37136;
   color:white;
   outline: none;
   border: none;
-  font-size: 20px;
+  font-size: 18px;
   transition: 0.5s;
 
-  padding: 20px 20px 20px 30px;
+  padding: 20px 20px 20px 25px;
   box-sizing: border-box;
 }
 
@@ -50,124 +59,128 @@ span{
   color:white
 }
 
-.product-text {
-  width: 900px;
-  margin: 0 auto;
-  padding: 10px;
+.product-text{
   position: relative;
+  margin-bottom: 30px;
 }
 
-.product-text span {
-  font-size: 25px;
+.product-text span{
+  font-size: 28px;
+  margin-right: 50px;
+  margin-left: 20px;
   cursor: pointer;
 }
 
-.product-serch  {
-  display: inline-block;
+.product-text span:hover{
+  color:#F37136;
 }
 
-.product-serch span:first-child{
+.product-text>span:first-child{
   color:#F37136;
-  margin-right: 40px;
 }
+
 
 .product-cate_items{
   display: none;
+  position: absolute;
+  top: 40px;
+  left: 230px;
 }
 
 .product-cate_items ul{
   display: flex;
-  margin-left: 140px;
 }
 
 .product-cate_items ul li{
-  margin-left: 40px;
   list-style: disc;
 }
-
 
 .product-cate_items span{
   font-size: 20px;
 }
 
-.product-out {
+.product-items {
   display: flex;
-  width: 960px;
-  height: 520px;
+  width: 1200px;
   background-color: #ffc0cb;
   border-radius: 10px;
   margin: 0 auto;
-  position: relative;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
-.product-in {
-  display: flex;
-  position: absolute;
-  top: 145px;
-  left: -70px;
+.product-items .item{
+  width: 355px;
+  border:1px dotted #e5e5e5;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
 }
 
-.product-in img {
-  height: 230px;
-  width: 200px;
-  display: block;
-  cursor: pointer;
+.product-items .item h3{
+  text-align: left;
+  padding-left: 35px;
+  color:#4B527C;
 }
 
-.product-in > ul {
-  display: flex;
-  width: 380px;
+.product-items .item img{
+  width: 350px;
+  height: 350px;
 }
 
-
-.product-in ul > ul {
-  display: flex;
-  margin-left: 5px;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.product-in ul > ul > li{
-  margin-top: 15px;
-}
-
-.product-in ul > ul > li > p {
- font-size: 16px;
- background-color: #4B527C;
- color:white;
- border-radius: 5px;
- padding:0px 5px;
- margin-right: 10px;
-}
-
-.product-in ul > ul > li > a {
-  display: block;
+.product-items .item a{
+  display: inline-block;
+  width: 130px;
   height: 30px;
-  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+  padding: 5px;
   line-height: 30px;
-  padding-left: 30px;
-  margin-right: 10px;
-  border-radius: 5px;
   background-color: #F37136;
- }
+  border:2px solid #F37136;
+  border-radius: 15px;
+}
 
- .product-in ul > ul > li > input {
-  height: 20px;
-  width: 155px;
-  font-size: 16px;
-  border-radius: 5px;
-  outline: none
-  border:none;
+.product-items .item a:nth-of-type(1){
+  background-color: transparent;
+  border:2px dotted white;
+  color:#4B527C;
+}
+
+.product-items .item a:nth-of-type(1):hover{
   background-color: #F37136;
-  color:white;
-  font-size: 16px;
- }
+}
 
- .product-in ul > ul > li > input::placeholder {
-  color:white;
- }
 
- .product-in ul > ul > li:nth-child(4){
-   display: inline-block;
- }
+/* 頁碼 */
+
+.page {
+  margin: 20px auto 20px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.page a,
+.page span {
+	margin: 0 7px;
+	line-height: 1;
+  color:white;
+}
+
+.page a:nth-child(2){
+	color: #f37136;
+	font-size: 25px;
+}
+
+.page span {
+	font-size: 40px;
+}
+
+.page a:hover,
+.page span:hover {
+	color: #f37136;
+}
 

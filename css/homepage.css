@@ -392,6 +392,7 @@ a {
 .bookstore-left {
   background-color: #f5b48c;
   height: 550px;
+  width: 300px;
   margin-left: 30px;
   border-radius: 10px;
   position: relative;
@@ -399,7 +400,6 @@ a {
 
 .bookstore-left ul {
   display: flex;
-  width: 300px;
   margin: 70px 20px;
   align-items: center;
 }
@@ -409,7 +409,11 @@ a {
   width: 200px;
 }
 
-.bookstore-right img {
+.bookstore-right.responsive{
+  display: flex;
+}
+
+.bookstore-right.responsive img {
   width: 800px;
   height: 550px;
   margin-right: 20px;
