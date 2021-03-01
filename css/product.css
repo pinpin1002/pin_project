@@ -146,7 +146,7 @@ span{
   line-height: 30px;
   background-color: #F37136;
   border:2px solid #F37136;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .product-items .item a:nth-of-type(1){
@@ -157,6 +157,11 @@ span{
 
 .product-items .item a:nth-of-type(1):hover{
   background-color: #F37136;
+  color:white;
+}
+
+.product-items .item a:nth-of-type(2):hover{
+  color:#4B527C;
 }
 
 

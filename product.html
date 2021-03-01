@@ -49,6 +49,50 @@
           <a href="#"><i class="fas fa-user"></i></a>
         </div>
       </div>
+
+            <!-- 漢堡選單 -->
+            <div class="mask">
+            </div>
+            <div class="hambergur-section">
+               <div class="logo">
+                  <img src="./img/Logo/米粒.png" alt="">
+               </div>
+              <div class="hamburger-btn">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+              <div class="hamburger">
+                <div class="hamburger-btn_item">
+                  <ul>
+                    <li>
+                      <div class="log1">
+                        <a href="./shoppingcart.html"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-user"></i></a>
+                      </div>
+                    </li>
+                    <li><a href="./homepage.html">首頁</a></li>
+                    <li><a href="./ourstory.html">關於我們</a></li>
+                    <li><a href="./activity.html">近期活動</a></li>
+                    <li><a href="./reservation.html">故事屋</a></li>
+                    <li><a href="./product.html">童書購買</a></li>
+                    <li><a href="#">自創故事</a></li>
+                    <li><a href="./question.html">常見問答</a></li>
+                    <li>
+                      <div class="info">
+                        <div class="fb"><a href="#"><img src="./img/facebook.png" alt=""></a></div>
+                        <div class="ig"><a href="#"><img src="./img/instagram.png" alt=""></a></div>
+                        <div class="line"><a href="#"><img src="./img/LINE_logo.png" alt=""></a></div>
+                        <div class="youtube"><a href="#"><img src="./img/youtube.png" alt=""></a></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+              <!-- 漢堡選單結束 -->
+
+
       <div class="main-pics"></div>
 
       
@@ -207,6 +251,17 @@
       $('.category').on('click', function(){
         $('.product-cate_items').toggle(500);
       });
+      
+      $('.hamburger-btn').click(function(){
+            $('.hamburger').toggle(800);
+          });
+          $('.hamburger-btn').click(function(){
+            $('.hamburger-btn').toggleClass('open')
+          })
+          
+          $('.hamburger-btn').click(function(){
+            $('.mask').toggleClass('on')
+          })
 
       });
       </script>
