@@ -55,7 +55,7 @@ footer iframe {
 .contactinfo ul, 
 .contactinfo a {
   position: relative;
-  z-index: 99;
+  z-index: 5;
 }
 
 .contactinfo a {
