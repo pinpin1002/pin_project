@@ -97,7 +97,8 @@ h1{
   box-sizing: border-box;
 }
 
-.order-confirm_check button{
+.order-confirm_check input[type="submit"]{
+  display: block;
   width: 100px;
   height: 50px;
   border-radius: 15px;
@@ -107,6 +108,8 @@ h1{
   color:#474876;
   font-weight: bold;
   margin-top: 20px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .order-confirm_check>h3{
@@ -114,7 +117,7 @@ h1{
 }
 
 
-.order-confirm_check button:hover{
+.order-confirm_check input[type="submit"]:hover{
   background-color: #ff5100;
   color:#474876
 }

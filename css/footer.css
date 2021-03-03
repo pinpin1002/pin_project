@@ -1,25 +1,61 @@
 footer {
-  height: 200px;
   width: 100%;
-  min-width: 1200px;
   background-color: #34866e;
-  display: inline-flex;
+  display:flex;
   align-items: center;
   position: relative;
-  margin-top: 300px;
   color: white;
 }
+
+@media (max-width:970px){
+  footer{
+  justify-content: space-around;
+  }
+}
+
+@media (max-width:768px){
+  footer{
+  flex-direction: column;
+  }
+  footer iframe{
+    order:2;
+    width: 300px;
+    height: 185px;
+  }
+  .contactinfo{
+    order:1;
+    margin-top: 20px;
+  }
+}
+
 
 footer iframe {
   width: 300px;
   height: 185px;
   border-radius: 5%;
-  margin: 0px 80px;
+  margin: 15px 100px;
+}
+
+@media (max-width:1075px){
+  footer iframe{
+    margin: 15px 60px;
+  }
+}
+
+@media (min-width:1076px) and (max-width:1200px){
+  footer iframe{
+    margin: 15px 80px;
+  }
 }
 
 .contactinfo {
-  margin-left: 30px;
-  min-width: 300px;
+  position: relative;
+}
+
+.contactinfo ul, 
+.contactinfo a {
+  position: relative;
+  z-index: 99;
 }
 
 .contactinfo a {
@@ -27,16 +63,68 @@ footer iframe {
 }
 
 .footer-pics {
-  height: 500px;
+  height: 400px;
   position: absolute;
-  bottom: 0px;
-  left: 900px;
+  bottom: -32px;
+  left: 330px;
 }
+
+@media (max-width:1100px){
+  .footer-pics{
+    height: 400px;
+    position: absolute;
+    bottom: -32px;
+    left: 220px;
+  }
+}
+
+@media (max-width:975px){
+  .footer-pics{
+    height: 300px;
+    position: absolute;
+    bottom: -32px;
+    left: -130px;
+  }
+}
+
+@media (max-width:768px){
+  .footer-pics{
+    display: none;
+  }
+  }
+
+.mountain{
+  position: relative;
+  top: 0;
+  right:0px;
+  margin-top: 300px;
+}
+
+@media (min-width:1075px) and (max-width:1200px){
+  .mountain{
+    position: relative;
+    top: 0;
+    right:30px;
+    margin-top: 300px;
+  }
+}
+
+@media (max-width:1075px){
+  .mountain{
+    position: relative;
+    top: 0;
+    right:100px;
+    margin-top: 300px;
+  }
+}
+
+
+
 
 .m1{
   height: 150px;
   position: absolute;
-  top: -130px;
+  bottom: -20px;
   left: 805px;
   z-index: -1;
 }
@@ -44,7 +132,7 @@ footer iframe {
 .m2{
   height: 150px;
   position: absolute;
-  top: -120px;
+  bottom: -60px;
   left: 750px;
   z-index: -2;
 }
@@ -52,7 +140,7 @@ footer iframe {
 .m3{
   height: 160px;
   position: absolute;
-  top: -140px;
+  bottom: -60px;
   left: 660px;
   z-index: -3;
 }
@@ -60,7 +148,7 @@ footer iframe {
 .m4{
   height: 160px;
   position: absolute;
-  top: -120px;
+  bottom: -30px;
   left: 320px;
   z-index: -1;
 }
@@ -68,14 +156,74 @@ footer iframe {
 .m5{
   height: 160px;
   position: absolute;
-  top: -110px;
+  bottom: -60px;
   left: 260px;
   z-index: -2;
 }
 .m6{
   height: 160px;
   position: absolute;
-  top: -140px;
+  bottom: -50px;
   left: 140px;
   z-index: -3;
+}
+
+
+@media (max-width:975px){
+  .m3{
+    height: 160px;
+    position: absolute;
+    bottom: -60px;
+    left: 570px;
+    z-index: -1;
+  }
+
+  .m2{
+    height: 160px;
+    position: absolute;
+    bottom: -60px;
+    left: 630px;
+    z-index: -1;
+  }
+
+  .m1{
+    height: 160px;
+    position: absolute;
+    bottom: -20px;
+    left: 670px;
+    z-index: -1;
+  }
+}
+
+
+@media (max-width:860px){
+  .m3{
+    height: 160px;
+    position: absolute;
+    bottom: -60px;
+    left: 390px;
+    z-index: -1;
+  }
+
+  .m2{
+    height: 160px;
+    position: absolute;
+    bottom: -60px;
+    left: 460px;
+    z-index: -1;
+  }
+
+  .m1{
+    height: 160px;
+    position: absolute;
+    bottom: -20px;
+    left: 540px;
+    z-index: -1;
+  }
+}
+
+@media (max-width:768px){
+.m1, .m2, .m3, .m4, .m5, .m6{
+  display: none;
+}
 }

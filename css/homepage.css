@@ -47,6 +47,12 @@ a {
   padding-top: 40px;
 }
 
+@media (max-width:700px){
+  .top-header{
+    height: 80px;
+  }
+}
+
 
 
 .log a:first-child {
@@ -177,7 +183,7 @@ a {
   transform: scale(0)
 }
 .hamburger-btn.open .line:nth-child(3){
-  transform: translateY(-16px) rotate(45deg) ;
+  transform: translateY(-16px) rotate(-495deg) ;
   transform-origin: center;
 }
 

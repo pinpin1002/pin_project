@@ -9,30 +9,15 @@ body h2, h3{
   background-image: url(../img/question1.jpg);
   width: 100%;
   height: 800px;
+  background-position: center center;
   background-size: cover;
   margin: 0px auto 70px;
-}
-
-@media screen and (max-width:1200px){
-  .main-pics{
-    width: calc(100% - 200px);
-    background-position: center center;
-  }
-}
-
-@media screen and (max-width:768px){
-  .main-pics{
-    width: 100%;
-    background-position: center center;
-    border-radius: 0px;
-  }
 }
 
 /* 問題列 */
 
 .searchbar {
   position: relative;
-  width: 1000px;
   margin: 0 auto 30px;
   display: flex;
   justify-content: flex-start;
@@ -60,9 +45,46 @@ body h2, h3{
 
 }
 
-.question1 {
+.question-block{
+
   width: 1000px;
-  height: 50px;
+  margin: 0 auto;
+}
+
+@media (min-width:1200px){
+  .question-block{
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+
+@media (min-width:991px) and (max-width:1199px){
+  .question-block{
+    width: 960px;
+  }
+}
+
+@media (min-width:767px) and (max-width:991px){
+  .question-block{
+    width: 700px;
+  }
+}
+
+@media (min-width:576px) and (max-width:766px){
+  .question-block{
+    width: 540px;
+  }
+}
+
+@media (max-width:576px){
+  .question-block{
+    width: 100%;
+  }
+}
+
+.question1 {
+  width: 100%;
   background-color: #F37136;
   border-radius: 30px;
   margin: 10px auto 0px;
@@ -75,8 +97,7 @@ body h2, h3{
 }
 
 .answer1 {
-  width: 1000px;
-  height: 50px;
+  width: 100%;
   background-color: #ffbcbc;
   border-radius: 30px;
   padding-left: 72px;
@@ -101,6 +122,27 @@ body h2, h3{
   padding: 30px 0;
   border-radius: 30px;
 }
+
+
+@media (min-width:768px) and (max-width:991px){
+  .contactus{
+    width: 720px;
+  }
+}
+
+@media (min-width:576px) and (max-width:768px){
+  .contactus{
+    width: 540px;
+  }
+}
+
+@media (max-width:576px){
+  .contactus{
+    width: 100%;
+  }
+}
+
+
 .contactus h2 {
   text-align: center;
 }
@@ -143,6 +185,7 @@ body h2, h3{
 }
 .contactus ul {
   display: flex;
+  margin: 30px 10px 10px;
 }
 
 .contactus ul li:first-child {
@@ -152,8 +195,44 @@ body h2, h3{
 }
 
 .contactus li {
-  margin: 30px 10px 10px;
+  margin: 0px 10px;
 }
+
+@media (min-width:768px) and (max-width:991px){
+  .contactus ul li:first-child{
+    width: 160px;
+  }
+}
+
+@media (min-width:576px) and (max-width:768px){
+  .contactus ul li:first-child{
+    width: 100px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width:576px){
+  .contactus ul li:first-child{
+    text-align: center;
+  }
+
+  .contactus ul{
+    margin: 5px 0px;
+  }
+}
+
+@media (max-width:576px){
+  .contactus ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+  }
+
+  .contactus input[type="text"]{
+    width: 100%;
+  }
+}
+
 
 .contactus textarea {
   width: 500px;
@@ -165,6 +244,25 @@ body h2, h3{
   transition: 0.5s;
   padding: 20px;
   box-sizing: border-box;
+}
+
+@media (min-width:576px) and (max-width:768px){
+  .contactus textarea{
+    width: 350px;
+  }
+}
+
+@media (max-width:576px){
+  .contactus textarea{
+    width: 300px;
+  }
+  .contactus h2{
+    margin-bottom: 20px;
+  }
+
+  .contactus h3{
+    text-align: left;
+  }
 }
 
 .contactus textarea:focus {
