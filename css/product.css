@@ -1,7 +1,7 @@
 @import url(./reset.css);
 
 span{
-  color:#4B527C
+  color:#4B527C;
 }
 
 /* 大照片 */
@@ -10,9 +10,16 @@ span{
   background-image: url(../img/b5.jpg);
   width: 100%;
   height: 800px;
+  background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
   margin: 0px auto 70px;
+}
+
+@media (max-width:768px){
+  .main-pics{
+    width: 100%;
+    height: 400px;
+  }
 }
 
 /* 商品區 */
@@ -23,12 +30,45 @@ span{
   margin: 0 auto;
 }
 
+@media (min-width:1200px){
+  .product{
+    width:1140px
+  }}
+
+@media (min-width:992px) and (max-width:1199px){
+.product{
+  width:960px
+}}
+
+@media (min-width:768px) and (max-width:991px){
+.product{
+  width:720px
+}}
+
+@media (min-width:576px) and (max-width:767px){
+.product{
+  width:540px
+}}
+
+@media (max-width:575px){
+.product{
+  width:100%
+}
+}
+
+
+
 .searchbar {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  
 }
+
+@media (max-width:767px){
+  .searchbar{
+    justify-content: flex-start;
+    margin-left: 10px;
+  }}
 
 .searchbar button {
   position: absolute;
@@ -38,6 +78,13 @@ span{
   background-color: #F37136;
   cursor: pointer;
 }
+
+@media (max-width:767px){
+  .searchbar button{
+    position: absolute;
+    left: 200px;
+    top: 17px;
+  }}
 
 .searchbar input {
   height: 50px;
@@ -61,8 +108,13 @@ span{
 
 .product-text{
   position: relative;
-  margin-bottom: 30px;
+  margin: 30px 0px 40px;
 }
+
+@media (max-width:991px){
+  .product-text{
+    margin: 30px 0px 20px;
+  }}
 
 .product-text span{
   font-size: 28px;
@@ -70,6 +122,11 @@ span{
   margin-left: 20px;
   cursor: pointer;
 }
+
+@media (max-width:991px){
+  .product-text span{
+    display: block;
+  }}
 
 .product-text span:hover{
   color:#F37136;
@@ -83,21 +140,49 @@ span{
 .product-cate_items{
   display: none;
   position: absolute;
-  top: 40px;
+  top: 45px;
   left: 230px;
 }
 
+@media (max-width:991px){
+  .product-cate_items{
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }}
+
 .product-cate_items ul{
   display: flex;
+  margin-bottom: 10px;
 }
+
+@media (max-width:767px){
+  .product-cate_items ul{
+    flex-direction: column;
+  }}
 
 .product-cate_items ul li{
   list-style: disc;
+  margin-left: 30px;
 }
 
-.product-cate_items span{
+.product-cate_items a{
   font-size: 20px;
+  display: block;
+  color:#4B527C;
 }
+
+
+@media (max-width:767px){
+  .product-cate_items a{
+    font-size: 18px;
+  }}
+
+.product-cate_items li:hover, .product-cate_items a:hover{
+  color:#F37136;
+}
+
+
 
 .product-items {
   display: flex;
@@ -110,13 +195,61 @@ span{
   flex-wrap: wrap;
 }
 
+    @media (min-width:1200px){
+      .product-items{
+        width:1140px;
+      }}
+  
+  @media (min-width:992px) and (max-width:1199px){
+    .product-items{
+      width:960px;
+  }}
+  
+  @media (min-width:768px) and (max-width:991px){
+    .product-items{
+      width:720px;
+  }}
+  
+  @media (min-width:576px) and (max-width:767px){
+    .product-items{
+      width:540px;
+    }}
+  
+  @media (max-width:575px){
+    .product-items{
+      width:100%;
+    }
+  }
+
 .product-items .item{
-  width: 355px;
+  width: 338px;
   border:1px dotted #e5e5e5;
   text-align: center;
   padding: 10px;
   margin: 10px;
 }
+
+@media (min-width:992px) and (max-width:1199px){
+  .product-items .item{
+    width:278px;
+  }}
+
+  @media (min-width:768px) and (max-width:991px){
+    .product-items .item{
+      width:318px;
+  }}
+
+  @media (min-width:576px) and (max-width:767px){
+    .product-items .item{
+      width:360px;
+      margin: 10px auto;
+    }}
+
+    @media (max-width:575px){
+      .product-items .item{
+        width:100%;
+      }
+    }
 
 .product-items .item h3{
   text-align: left;
@@ -132,9 +265,29 @@ span{
 }
 
 .product-items .item img{
-  width: 350px;
+  width: 100%;
   height: 350px;
 }
+
+@media (min-width:992px) and (max-width:1199px){
+  .product-items .item img{
+    max-width: 100%;
+    height: 50%;
+  }}
+
+
+  @media (min-width:576px) and (max-width:767px){
+    .product-items .item img{
+      max-width: 100%;
+      height: 50%;
+    }}
+
+    @media (max-width:575px){
+      .product-items .item img{
+        width: 80%;
+        height: 310px;
+      }
+    }
 
 .product-items .item a{
   display: inline-block;
@@ -148,6 +301,12 @@ span{
   border:2px solid #F37136;
   border-radius: 20px;
 }
+
+@media (min-width:992px) and (max-width:1199px){
+  .product-items .item a{
+    width: 123px;
+  }}
+
 
 .product-items .item a:nth-of-type(1){
   background-color: transparent;

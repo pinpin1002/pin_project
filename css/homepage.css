@@ -10,7 +10,7 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 
@@ -47,7 +47,7 @@ a {
   padding-top: 40px;
 }
 
-@media (max-width:700px){
+@media (max-width:768px){
   .top-header{
     height: 80px;
   }
@@ -66,7 +66,7 @@ a {
   right: 50px;
 }
 
-@media (max-width:700px){
+@media (max-width:768px){
   .log{
     visibility: hidden;
   } 
@@ -80,7 +80,7 @@ a {
   position: relative;
 }
 
-@media (max-width:700px){
+@media (max-width:768px){
   .top-header ul{
     visibility: hidden;
   } 
@@ -147,7 +147,7 @@ a {
   z-index: 97;
 }
 
-@media (max-width:700px){
+@media (max-width:768px){
   .hambergur-section{
     display: block;
   }
@@ -213,8 +213,7 @@ a {
 }
 
 .logo img{
-  width: 80px;
-  height: 80px;
+  width: 150px;
   position: fixed;
   top: 30px;
   left: 30px;
@@ -744,4 +743,9 @@ a {
   box-shadow: 5px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
+
+.bookstore-right.autoplay{
+  width: 900px;
+  height: 800px;
+}
 
