@@ -573,7 +573,7 @@ a {
   display: flex;
 }
 
-.bookstore-right.responsive img {
+.bookstore-right img {
   width: 800px;
   height: 550px;
   margin-right: 20px;
@@ -743,9 +743,7 @@ a {
   box-shadow: 5px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
-
-.bookstore-right.autoplay{
-  width: 900px;
-  height: 800px;
+.footer-pics {
+  bottom: -27px !important;
 }
 
