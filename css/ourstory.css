@@ -7,9 +7,16 @@
   background-image: url(../img/group.jpeg);
   width: 100%;
   height: 800px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   margin: 0px auto 70px;
+}
+
+@media (max-width:768px){
+  .main-pics{
+    width: 100%;
+    height: 400px;
+  }
 }
 
 /* 我們的故事-文字區塊 */
@@ -19,8 +26,35 @@
   color:white;
 }
 
+@media (max-width:576px){
+  .text{
+    margin: 50px 0 100px;
+    text-align: center;
+    color:white;
+  }
+}
+
 .text p {
-  margin-top: 20px;
+  margin: 20px auto 0px;
+  width: 480px;
+}
+
+@media (max-width:576px){
+  .text p{
+    margin: 20px auto 0px;
+  }
+
+  .text p:nth-of-type(1){
+    width: 300px;
+  }
+
+  .text p:nth-of-type(2){
+    width: 370px;
+  }
+
+  .text p:nth-of-type(3){
+    width: 370px;
+  }
 }
 
 /* 空間 */
@@ -30,36 +64,95 @@
   width: 1200px;
   height: 600px;
   background-size: cover;
+  background-position: center center;
 
   margin: 20px auto 0px;
 
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  transition: 1.3s;
+  transition: background-image 1.3s;
 
   position: relative;
 }
 
-.space-bigpics:before {
-  content: "";
-  display: block;
-  width: 800px;
-  height: 800px;
-  background-color: rgba(59, 124, 116, 0.22);
-  border-radius: 50%;
-  position: absolute;
-  top: -150px;
-  left: 210px;
-  z-index: -1;
+@media (min-width:991px) and (max-width:1199px){
+  .space-bigpics{
+    width: 960px;
+  }
+}
+
+@media (min-width:767px) and (max-width:991px){
+  .space-bigpics{
+    width: 700px;
+  }
+}
+
+@media (min-width:576px) and (max-width:766px){
+  .space-bigpics{
+    width: 540px;
+    height: 350px;
+    border-radius: 0px;
+  }
+}
+
+@media (max-width:576px){
+  .space-bigpics{
+    width: 100%;
+    height: 350px;
+    border-radius: 0px;
+  }
 }
 
 .space-intro{
   text-align: center;
   color:white;
+  position: relative;
 }
 
+.space-intro h1{
+  padding-top: 30px;
+}
+
+.space-intro:before {
+  content: "";
+  display: block;
+  width: 800px;
+  height: 800px;
+  background-color: #7ABFB7;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: -1;
+}
+
+@media (min-width:767px) and (max-width:991px){
+  .space-intro:before{
+    width: 700px;
+  }
+}
+
+@media (min-width:576px) and (max-width:766px){
+  .space-intro:before{
+    width: 530px;
+    height: 530px;
+  }
+}
+
+@media (max-width:576px){
+  .space-intro:before{
+    width: 100%;
+    height: 350px;
+  }
+}
+
+
+
 .space-text {
-  border: 1px solid;
+  border: 1px dotted black;
   width: 300px;
   height: 300px;
   padding: 10px;
@@ -72,8 +165,51 @@
 
   color: #4b527c;
   background-color: #e5e5e5;
-
 }
+
+@media (max-width:766px){
+  .space-text{
+   display: none;
+}}
+
+.space-text_phone{
+  width: 1200px;
+  border: 1px dotted black;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+
+  color: #4b527c;
+  background-color: #e5e5e5;
+  display: none;
+}
+
+@media (min-width:991px) and (max-width:1199px){
+  .space-text_phone{
+    width: 960px;
+  }
+}
+
+@media (min-width:767px) and (max-width:991px){
+  .space-text_phone{
+    width: 700px;
+  }
+}
+
+@media (min-width:576px) and (max-width:766px){
+  .space-text_phone{
+    width: 540px;
+    display: block;
+  }
+}
+
+@media (max-width:576px){
+  .space-text_phone{
+    width: 100%;
+    display: block;
+  }
+}
+
 
 .space-down {
   width: 1200px;
@@ -81,61 +217,107 @@
   display: flex;
   transition: all, 0.5s;
   text-align: center;
+  flex-grow: 1;
+  
+}
+
+@media (min-width:991px) and (max-width:1199px){
+  .space-down{
+    width: 960px;
+  }
+}
+
+@media (min-width:767px) and (max-width:991px){
+  .space-down{
+    width: 700px;
+  }
+}
+
+@media (min-width:576px) and (max-width:766px){
+  .space-down{
+    width: 540px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width:576px){
+  .space-down{
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
 
 .space-1 {
   background-image: url(../img/space1.jpg);
-  width: 200px;
+  flex-basis: 200px;
   height: 100px;
   background-size: cover;
+  background-position: center center;
   transition: all, 1s;
   cursor: pointer;
+  
 }
 .space-2 {
   background-image: url(../img/space2.jpg);
-  width: 200px;
+  flex-basis: 200px;
   height: 100px;
   background-size: cover;
-
+  background-position: center center;
   cursor: pointer;
 }
 .space-3 {
   background-image: url(../img/space3.jpg);
-  width: 200px;
+  flex-basis: 200px;
   height: 100px;
   background-size: cover;
+  background-position: center center;
 
   cursor: pointer;
 }
 .space-4 {
   background-image: url(../img/space4.jpg);
-  width: 200px;
+  flex-basis: 200px;
   height: 100px;
   background-size: cover;
+  background-position: center center;
 
   cursor: pointer;
 }
 .space-5 {
   background-image: url(../img/space5.jpg);
-  width: 200px;
+  flex-basis: 200px;
   height: 100px;
   background-size: cover;
+  background-position: center center;
 
   cursor: pointer;
 }
 .space-6 {
   background-image: url(../img/space6.jpg);
-  width: 200px;
+  flex-basis: 200px;
   height: 100px;
   background-size: cover;
+  background-position: center center;
 
   cursor: pointer;
+}
+
+
+@media (min-width:576px) and (max-width:766px){
+  .space-1, .space-2, .space-3, .space-4, .space-5, .space-6{
+    flex-basis: calc( 100% / 3 );
+  }
+}
+
+@media (max-width:576px){
+  .space-1, .space-2, .space-3, .space-4, .space-5, .space-6{
+    flex-basis: calc( 100% / 3 );
+  }
 }
 
 .space-1:before {
   content: "室內空間";
   display: block;
-  width: 200px;
   height: 100px;
   background-color: white;
   color: #4b527c;
@@ -148,7 +330,6 @@
 .space-2:before {
   content: "展覽空間";
   display: block;
-  width: 200px;
   height: 100px;
   background-color: white;
   color: #4b527c;
@@ -161,7 +342,6 @@
 .space-3:before {
   content: "閱讀空間";
   display: block;
-  width: 200px;
   height: 100px;
   background-color: white;
   color: #4b527c;
@@ -174,7 +354,6 @@
 .space-4:before {
   content: "廁所";
   display: block;
-  width: 200px;
   height: 100px;
   background-color: white;
   color: #4b527c;
@@ -187,7 +366,6 @@
 .space-5:before {
   content: "遊戲空間";
   display: block;
-  width: 200px;
   height: 100px;
   background-color: white;
   color: #4b527c;
@@ -200,7 +378,6 @@
 .space-6:before {
   content: "戶外空間";
   display: block;
-  width: 200px;
   height: 100px;
   background-color: white;
   color: #4b527c;
@@ -232,6 +409,51 @@
   width: 1200px;
   margin: 0 auto;
   justify-content: center;
+}
+
+.staff > ul > li > p{
+  text-align: left;
+  padding-left: 50px;
+  margin-top: 5px;
+}
+
+@media (min-width:991px) and (max-width:1199px){
+  .staff{
+    width: 960px;
+  }
+}
+
+@media (min-width:767px) and (max-width:991px){
+  .staff{
+    width: 700px;
+  }
+}
+
+@media (min-width:576px) and (max-width:766px){
+  .staff{
+    width: 540px;
+    display: block;
+  }
+  .staff ul{
+    display: flex;
+  }
+
+}
+
+@media (max-width:576px){
+  .staff{
+    width: 100%;
+    display: block;
+  }
+
+  .staff > ul > li > p{
+    width: 380px;
+    padding-left: 0px;
+  }
+
+  .staff ul > li > img{
+    float: left;
+  }
 }
 
 .staff ul {
