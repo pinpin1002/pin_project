@@ -434,8 +434,14 @@
     width: 540px;
     display: block;
   }
-  .staff ul{
-    display: flex;
+
+  .staff > ul > li > p{
+    width: 430px;
+    padding-left: 0px;
+  }
+
+  .staff ul > li > img{
+    float: left;
   }
 
 }
