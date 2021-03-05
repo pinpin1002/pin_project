@@ -436,7 +436,6 @@
   }
 
   .staff > ul > li > p{
-    width: 430px;
     padding-left: 0px;
   }
 
@@ -444,6 +443,9 @@
     float: left;
   }
 
+  .staff ul > li:nth-child(2){
+    width: 100%;
+  }
 }
 
 @media (max-width:576px){
@@ -453,17 +455,20 @@
   }
 
   .staff > ul > li > p{
-    width: 380px;
     padding-left: 0px;
   }
 
   .staff ul > li > img{
     float: left;
   }
+  
+  .staff ul > li:nth-child(2){
+    width: 100%;
+  }
 }
 
 .staff ul {
-  margin: 50px 50px;
+  margin: 50px 30px;
 }
 
 .staff ul li img {
