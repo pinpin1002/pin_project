@@ -40,20 +40,24 @@
 }
 
 @media (max-width:576px){
+  .text{
+    padding: 0px 30px;
+  }
+
   .text p{
     margin: 20px auto 0px;
   }
 
   .text p:nth-of-type(1){
-    width: 300px;
+    width: 100%;
   }
 
   .text p:nth-of-type(2){
-    width: 370px;
+    width: 100%;
   }
 
   .text p:nth-of-type(3){
-    width: 370px;
+    width: 100%;
   }
 }
 
