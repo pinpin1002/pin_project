@@ -15,8 +15,42 @@ h1{
   width: 1200px;
   margin: 0 auto;
   color:#474876;
-  
 }
+
+@media (min-width:992px) and (max-width:1199px){
+  .order-confirm_header{
+  width:960px;
+}}
+
+@media (min-width:768px) and (max-width:991px){
+  .order-confirm_header{
+  width:720px;
+}}
+
+@media (min-width:576px) and (max-width:767px){
+  .order-confirm_header{
+  width:540px;
+}}
+
+@media (max-width:575px){
+  .order-confirm_header{
+  width:100%;
+}
+}
+
+/* checkbox */
+
+@media (min-width:576px) and (max-width:767px){
+  input[type="checkbox"]:not(.checkbox){
+    align-self: flex-start;
+}}
+
+@media (max-width:575px){
+  input[type="checkbox"]:not(.checkbox){
+    align-self: flex-start;
+}}
+
+
 .order-confirm_header div{
   flex-grow: 1;
 }
@@ -25,6 +59,17 @@ h1{
   flex-basis: 300px;
 }
 
+@media (min-width:576px) and (max-width:767px){
+  .order-confirm_header .goods{
+    flex-basis: 180px;
+}}
+
+@media (max-width:575px){
+  .order-confirm_header .goods{
+    flex-basis: 150px;
+}}
+
+
 .order-confirm_main{
   background-color: #FFBCBC;
   width: 1200px;
@@ -32,6 +77,27 @@ h1{
   display: flex;
   flex-direction: column;
 }
+
+
+@media (min-width:992px) and (max-width:1199px){
+  .order-confirm_main{
+  width:960px;
+}}
+
+@media (min-width:768px) and (max-width:991px){
+  .order-confirm_main{
+  width:720px;
+}}
+
+@media (min-width:576px) and (max-width:767px){
+  .order-confirm_main{
+  width:540px;
+}}
+
+@media (max-width:575px){
+  .order-confirm_main{
+  width:100%;
+}}
 
 .order-confirm_main .item{
   display: flex;
@@ -46,25 +112,58 @@ h1{
   flex-grow: 1;
 }
 
-.order-confirm_main .goods{
-  flex-basis: 320px;
-  
-}
-
 .order-confirm_main .item1{
   flex-basis: 10px;
 }
 
+.order-confirm_main .item1.cancel{
+  display: flex;
+  align-items: center;
+}
+
+.order-confirm_main .item1.number{
+  padding-left: 50px;
+}
+
+@media (min-width:576px) and (max-width:767px){
+  .order-confirm_main .item1.number{
+    padding-left: 20px;
+}}
+
+@media (max-width:575px){
+  .order-confirm_main .item1.number{
+    padding-left: 40px;
+}}
+
+.order-confirm_main .goods{
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width:576px) and (max-width:767px){
+  .order-confirm_main .goods{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}}
+
+@media (max-width:575px){
+  .order-confirm_main .goods{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 120px;
+}}
+
+
 .order-confirm_main .goods .pic{
   width: 100px;
-  height: 100px;
-  display: inline-block;
-  vertical-align: middle;
+  font-size: 0;
 }
 
 .order-confirm_main .goods img{
- width: 100%;
- height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .order-confirm_main .goods .text{
@@ -97,6 +196,29 @@ h1{
   box-sizing: border-box;
 }
 
+@media (min-width:992px) and (max-width:1199px){
+  .order-confirm_check{
+  width:960px;
+}}
+
+@media (min-width:768px) and (max-width:991px){
+  .order-confirm_check{
+  width:720px;
+}}
+
+@media (min-width:576px) and (max-width:767px){
+  .order-confirm_check{
+  width:540px;
+}}
+
+@media (max-width:575px){
+  .order-confirm_check{
+  width:100%;
+}
+}
+
+
+
 .order-confirm_check input[type="submit"]{
   display: block;
   width: 100px;
@@ -114,6 +236,17 @@ h1{
 
 .order-confirm_check>h3{
   padding-right: 200px;
+}
+
+@media (min-width:576px) and (max-width:767px){
+  .order-confirm_check>h3{
+    padding-right: 0px;
+}}
+
+@media (max-width:575px){
+  .order-confirm_check>h3{
+    padding-right: 0px;
+}
 }
 
 
