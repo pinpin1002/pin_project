@@ -7,9 +7,6 @@ body {
 	font-weight: bold;
 }
 
-.wrapper {
-}
-
 h1 {
   font-family: "Stick";
   font-size: 58px;
@@ -44,7 +41,7 @@ a {
 
 @media (max-width:768px){
   .top-header{
-    height: 80px;
+    display: none;
   }
 }
 
@@ -202,8 +199,6 @@ a {
 }
 
 
-
-
 .hamburger .hamburger-btn_item{
   position: relative;
   margin-top: 40px;
@@ -213,7 +208,7 @@ a {
   width: 150px;
   position: fixed;
   top: 20px;
-  left: 30px;
+  left: 10px;
   z-index: 100;
 }
 
