@@ -841,6 +841,7 @@ a {
   display: flex;
   width: 95%;
   margin: -30px auto 80px;
+  justify-content: center;
 }
 
 
@@ -858,6 +859,10 @@ a {
 .storyhouse-pics_right{
   font-size: 0;
   margin-left: -50px;
+}
+
+.storyhouse-pics_right img{
+  display: block;
 }
 
 .storyhouse-pics_right img:nth-child(1){
