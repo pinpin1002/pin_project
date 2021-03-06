@@ -1142,9 +1142,24 @@ a {
 }
 
 .news_1 img {
-  height: 300px;
   width: 420px;
+  height: 300px;
   border-radius: 20px;
+}
+
+@media (min-width:576px) and (max-width:766px){
+  .news_1 img {
+    width: 420px;
+    height: 300px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width:576px){
+  .news_1 img {
+    width: 100%;
+    border-radius: 20px;
+  }
 }
 
 .news_1 li a {
