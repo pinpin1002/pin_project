@@ -799,31 +799,17 @@ a {
 
 .storyhouse {
   background-color:#7ABFB7;
-  border-radius: 50%;
-  height: 1200px;
+  padding: 30px 0px 100px;
 
-  margin-top: 100px;
+  margin-top: 250px;
   position: relative;
 }
-
-@media (min-width:991px) and (max-width:1199px){
-  .storyhouse{
-    height: 1100px;
-  }
-}
-
-@media (max-width:991px){
-  .storyhouse{
-    background-color:transparent;
-    height: 100%;
-  }
-}
-
 
 .storyhouse h1 {
   text-align: center;
   padding: 100px 0px 0px;
   margin-bottom: 20px;
+  position:relative
 }
 
 .storyhouse h3 {
@@ -833,57 +819,67 @@ a {
 }
 
 .storyhouse-pics {
-  position: relative;
+  display: flex;
   width: 95%;
-  margin: -70px auto 80px;
+  margin: -30px auto 80px;
 }
 
-.storyhouse-pics img:first-child{
+
+
+.storyhouse-pics_left img{
   width: 750px;
   height: 500px;
-  border-radius: 10%;
+  border-radius: 30px;
   margin-left: 25px;
-  margin-top: 50px;
+  border:5px solid pink;
+  box-sizing: border-box;
 }
 
-.storyhouse-pics img:nth-child(2){
+
+.storyhouse-pics_right{
+  font-size: 0;
+  margin-left: -50px;
+}
+
+.storyhouse-pics_right img:nth-child(1){
   width: 400px;
-  border-radius: 5%;
-  position: absolute;
-  top: 50px;
-  right: 30px;
+  border-radius: 20px;
+  border:5px solid pink;
+  box-sizing: border-box;
+
 }
 
-.storyhouse-pics img:last-child{
+.storyhouse-pics_right img:nth-child(2){
   width: 400px;
-  border-radius: 5%;
-  position: absolute;
-  top: 275px;
-  right:30px;
+  border-radius: 20px;
+  border:5px solid pink;
+  box-sizing: border-box;
 }
 
-@media (min-width:991px) and (max-width:1199px){
-  .storyhouse-pics img:first-child{
-    width: 700px;
+@media (min-width:1050px) and (max-width:1199px){
+
+  .storyhouse-pics_right{
+    font-size: 0;
+    margin-left: -50px;
+  }
+
+  .storyhouse-pics_left img{
+    width: 650px;
     height: 450px;
   }
 
-  .storyhouse-pics img:nth-child(2){
+  .storyhouse-pics_right img:nth-child(1){
     width: 350px;
-    position: absolute;
-    top: 60px;
-    right: 50px;
+    border-radius: 20px;
   }
   
-  .storyhouse-pics img:last-child{
+  .storyhouse-pics_right img:nth-child(2){
     width: 350px;
-    position: absolute;
-    top: 250px;
-    right: 50px;
+    border-radius: 20px;
   }
 }
 
-@media (min-width:767px) and (max-width:991px){
+@media (min-width:780px) and (max-width:1050px){
   .storyhouse h1 {
     padding: 60px 0px 0px;
   }
@@ -894,103 +890,94 @@ a {
     margin: -30px auto 80px;
   }
 
-  .storyhouse-pics img:first-child{
-    width: 720px;
-    height: 450px;
-    margin: 0 auto;
-    display: block;
+  .storyhouse-pics_right{
+    font-size: 0;
+    margin-left: -150px;
+    margin-top: 10px;
   }
 
-  .storyhouse-pics img:nth-child(2){
-    width: 250px;
-    position: relative;
-    top: 0;
-    right: 0;
-    margin-top: -50px;
-  }
-  
-  .storyhouse-pics img:last-child{
-    width: 250px;
-    height: 140px;
-    position: relative;
-    top: 0;
-    right: 0;
-    margin-top: -50px;
-    margin-left: -5px;
-  }
-}
-
-@media (min-width:576px) and (max-width:766px){
-
-  .storyhouse h1 {
-    padding: 60px 0px 0px;
-  }
-
-  .storyhouse-pics {
-    text-align: center;
-    margin: -30px auto 80px;
-  }
-
-  .storyhouse-pics img:first-child{
-    width: 100%;
+  .storyhouse-pics_left img{
+    width: 550px;
     height: 400px;
-    margin: 0 auto;
-    display: block;
   }
 
-  .storyhouse-pics img:nth-child(2){
-    width: 250px;
-    position: relative;
-    top: 0;
-    right: 0;
-    margin-top: -50px;
+  .storyhouse-pics_right img:nth-child(1){
+    width: 300px;
+    border-radius: 20px;
   }
   
-  .storyhouse-pics img:last-child{
-    width: 250px;
-    height: 140px;
-    position: relative;
-    top: 0;
-    right: 0;
-    margin-top: -50px;
-    margin-left: -5px;
+  .storyhouse-pics_right img:nth-child(2){
+    width: 300px;
+    border-radius: 20px;
   }
 }
 
-@media (max-width:576px){
+@media (min-width:590px) and (max-width:779px){
 
   .storyhouse h1 {
     padding: 60px 0px 0px;
   }
 
   .storyhouse-pics {
-    text-align: center;
-    margin: -30px auto 80px;
-  }
-
-  .storyhouse-pics img:first-child{
-    width: 100%;
-    height: 350px;
-    margin: 0 auto;
     display: block;
+    text-align: center;
   }
 
-  .storyhouse-pics img:nth-child(2){
-    width: 200px;
-    position: relative;
-    top: -20px;
-    right: 0;
+  .storyhouse-pics_right{
+    margin-left: 0px;
     margin-top: -50px;
+  }
+
+  .storyhouse-pics_left img{
+    width: 550px;
+    height: 400px;
+    margin-left: 0;
+  }
+
+  .storyhouse-pics_right img:nth-child(1){
+    width: 250px;
+    border-radius: 20px;
   }
   
-  .storyhouse-pics img:last-child{
-    width: 200px;
-    height: 113px;
-    position: relative;
-    top: -20px;
-    right: 0;
+  .storyhouse-pics_right img:nth-child(2){
+    width: 250px;
+    height: 145px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width:589px){
+
+  .storyhouse h1 {
+    padding: 60px 0px 0px;
+  }
+
+  .storyhouse-pics {
+    display: block;
+    text-align: center;
+  }
+
+  .storyhouse-pics_right{
+    margin-left: 0px;
     margin-top: -50px;
-    margin-left: -5px;
+  }
+
+  .storyhouse-pics_left img{
+    width: 100%;
+    height: 320px;
+    margin-left: 0;
+  }
+
+  .storyhouse-pics_right img:nth-child(1){
+    width: calc(100% / 2);
+    height: 145px;
+    border-radius: 20px;
+  }
+  
+  .storyhouse-pics_right img:nth-child(2){
+    width: calc(100% / 2);
+    height: 145px;
+    border-radius: 20px;
   }
 }
 
@@ -1016,30 +1003,30 @@ a {
   box-shadow: 5px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width:991px) and (max-width:1199px){
+@media (min-width:1050px) and (max-width:1199px){
   .storyhouse-circle{
-    bottom: 220px;
-    right: 320px;
+    bottom: 330px;
+    left: 50%;
   }
 }
 
-@media (min-width:767px) and (max-width:991px){
+@media (min-width:767px) and (max-width:1049px){
   .storyhouse-circle{
-    bottom: 115px;
-    left: 41%;
+    bottom: 415px;
+    left: 51%;
   }
 }
 
 @media (min-width:576px) and (max-width:766px){
   .storyhouse-circle{
-    bottom: 115px;
+    bottom: 320px;
     left: 39%;
   }
 }
 
 @media (max-width:576px){
   .storyhouse-circle{
-    bottom: 115px;
+    bottom: 400px;
     left: 35%;
   }
 }
