@@ -948,6 +948,8 @@ a {
   }
 
   .storyhouse-pics_right{
+    display: flex;
+    justify-content: center;
     margin-left: 0px;
     margin-top: -50px;
   }
@@ -982,6 +984,8 @@ a {
   }
 
   .storyhouse-pics_right{
+    display: flex;
+    justify-content: center;
     margin-left: 0px;
     margin-top: -50px;
   }
