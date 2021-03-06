@@ -114,12 +114,6 @@ body h1{
 }
 
 
-/* @media (max-width:575px){
-	.sec-block_pics a {
-		margin: 0 auto;
-}
-} */
-
 .sec-block_pics a:hover {
 	background-color: #f37136;
 	color: #474876;
