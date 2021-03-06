@@ -184,6 +184,7 @@ h1{
 .material-icons{
   font-size: 22px;
   color:red;
+  cursor: pointer;
 }
 
 
@@ -260,7 +261,7 @@ h1{
 
 @media (max-width:575px){
   body p{
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .item1.cancel{
