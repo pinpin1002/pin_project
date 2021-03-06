@@ -1,6 +1,8 @@
 @import url(./reset.css);
 
 
+
+
 /* 訂單確認區 */
 
 h1{
@@ -253,4 +255,18 @@ h1{
 .order-confirm_check input[type="submit"]:hover{
   background-color: #ff5100;
   color:#474876
+}
+
+
+@media (max-width:575px){
+  body p{
+    font-size: 10px;
+}
+
+.item1.cancel{
+  justify-content: center
+}
+.item1.cancel span:first-child{
+  display: none;
+}
 }
