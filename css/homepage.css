@@ -545,6 +545,15 @@ a {
   }
 }
 
+@media (max-width:779px){
+  .ourstory-circle{
+
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+  }
+}
+
 .light-1 {
   background-image: url(../img/christmas-304506_640.png);
   width: 640px;
@@ -792,6 +801,15 @@ a {
     top: 80%;
     left: 5%;
   }
+  }
+
+  @media (max-width:779px){
+    .bookstore-circle{
+  
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+    }
   }
 
 
@@ -1202,16 +1220,25 @@ a {
 @media (min-width:576px) and (max-width:766px){
   .news-circle{
     position: absolute;
-    bottom: -150px;
-    left: 70%;
+    bottom: -80px;
+    left: 50%;
   }
 }
 
 @media (max-width:576px){
   .news-circle{
     position: absolute;
-    bottom: -150px;
-    left: 60%;
+    bottom: -80px;
+    left: 50%;
+  }
+}
+
+@media (max-width:779px){
+  .news-circle{
+
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
   }
 }
 
