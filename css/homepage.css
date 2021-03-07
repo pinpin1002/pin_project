@@ -673,6 +673,7 @@ a {
 
 .bookstore_1 {
   display: flex;
+  position: relative;
 }
 
 @media (max-width:766px){
@@ -792,7 +793,7 @@ a {
   background-color: #f37136;
   text-align: center;
   position: absolute;
-  top: -105px;
+  bottom: -60px;
   left: 230px;
   z-index: 1;
 
@@ -802,8 +803,8 @@ a {
 @media (max-width:766px){
   .bookstore-circle {
     position: absolute;
-    top: -30%;
-    left: 75%;
+    bottom: -10%;
+    left: 10%;
   }
   }
 
