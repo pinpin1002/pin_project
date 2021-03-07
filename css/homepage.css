@@ -749,8 +749,8 @@ a {
 
 
 .bookstore-right{
-  display: flex;
   position: relative;
+  width: calc(100% - 300px);
 }
 
 .bookstore-right img {
@@ -763,23 +763,24 @@ a {
 
 @media (min-width:991px) and (max-width:1199px){
   .bookstore-right img{
-    width: 100%;
     height: 500px;
   }
 }
 
 @media (min-width:767px) and (max-width:991px){
   .bookstore-right img{
-    width: 100%;
     height: 400px;
   }
 }
 
 @media (max-width:766px){
   .bookstore-right img {
-    width: 100%;
-    height: 100%;
     border-radius: 0px;
+    margin-right: 0px;
+    height: 400px;
+  }
+  .bookstore-right{
+    width: 100%;
   }
   }
 
@@ -791,8 +792,9 @@ a {
   background-color: #f37136;
   text-align: center;
   position: absolute;
-  top: -75px;
-  left: -80px;
+  top: -105px;
+  left: 230px;
+  z-index: 1;
 
   box-shadow: 5px 3px 0px rgba(0, 0, 0, 0.2);
 }
@@ -800,8 +802,8 @@ a {
 @media (max-width:766px){
   .bookstore-circle {
     position: absolute;
-    top: 80%;
-    left: 5%;
+    top: -30%;
+    left: 75%;
   }
   }
 
@@ -1257,3 +1259,20 @@ a {
   bottom: -27px !important;
 }
 
+
+/* slick */
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 60px;
+  line-height: 20px;
+  position: absolute;
+  top: -35px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .5;
+  color: red;
+  -webkit-font-smoothing: antialiased;

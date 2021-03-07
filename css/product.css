@@ -263,13 +263,13 @@ span{
 }
 
 .fa-minus-square{
-  padding: 20px;
+  padding: 0 20px;
   color: red;
   cursor: pointer;
 }
 
 .fa-plus-circle{
-  padding: 20px;
+  padding: 0 20px;
   color:green;
   cursor: pointer;
 }
