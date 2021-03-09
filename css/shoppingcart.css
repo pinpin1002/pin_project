@@ -181,6 +181,36 @@ h1{
   color:#474876;
 }
 
+.order-confirm_main .item input[type="text"]{
+  background-color: transparent;
+  border:none;
+  outline:none;
+  width: 70px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.order-confirm_main .item button{
+  border:none;
+  outline:none;
+  background-color: transparent;
+}
+
+.fa-minus-square{
+  color:red;
+  font-size: 16px;
+}
+
+.fa-plus-circle{
+  color:green;
+  font-size: 16px;
+}
+
+
+.item1.cancel{
+  cursor:pointer;
+}
+
 .material-icons{
   font-size: 22px;
   color:red;

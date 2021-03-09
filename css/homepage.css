@@ -778,7 +778,7 @@ a {
   .bookstore-right img {
     border-radius: 0px;
     margin-right: 0px;
-    height: 400px;
+    height: 320px;
   }
   .bookstore-right{
     width: 100%;
@@ -824,13 +824,13 @@ a {
   background-color:#7ABFB7;
   padding: 30px 0px 100px;
 
-  margin-top: 250px;
+  margin-top: 150px;
   position: relative;
 }
 
 .storyhouse h1 {
   text-align: center;
-  padding: 100px 0px 0px;
+  padding: 60px 0px 0px;
   margin-bottom: 20px;
   position:relative
 }
@@ -1265,11 +1265,11 @@ a {
 
 .slick-dots li button:before {
   font-family: 'slick';
-  font-size: 60px;
+  font-size: 40px;
   line-height: 20px;
   position: absolute;
   top: -35px;
-  left: 0;
+  left: 20px;
   width: 20px;
   height: 20px;
   content: '•';
@@ -1277,3 +1277,4 @@ a {
   opacity: .5;
   color: red;
   -webkit-font-smoothing: antialiased;
+}

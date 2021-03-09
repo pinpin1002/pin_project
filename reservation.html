@@ -92,11 +92,11 @@
       <div class="resverbtn">
         <ul>
           <li><h3>大人人數</h3></li>
-          <li><input type="number" placeholder="大人1位" /></li>
+          <li><input type="number" placeholder="大人1位" min="1"/></li>
         </ul>
         <ul>
           <li><h3>小孩人數<span>12歲以下</span></h3></li>
-          <li><input type="number" placeholder="小孩1位" /></li>
+          <li><input type="number" placeholder="小孩1位" min="1" /></li>
         </ul>
         <ul>
           <li><h3>日期</h3></li>
@@ -108,17 +108,51 @@
       <div class="resverpics">
         <ul>
           <li><h3>2021/02/01<br>13:00-13:30</h3></li>
-          <li><img src="./img/redhood.png" alt="" /></li>
+          <div class="resverpics_3d">
+            <ul>
+              <li class="top"></li>
+              <li class="left"></li>
+              <li class="right"></li>
+              <li class="bottom"></li>
+              <li class="front front1"></li>
+              <li class="back">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quo perspiciatis assumenda culpa totam repellendus neque obcaecati. Dolor doloribus debitis alias ullam, quo reiciendis totam architecto qui, illo, sapiente similique.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quo perspiciatis assumenda culpa.</p>
+              </li>
+            </ul>
+          </div>
           <li><button>預約</button></li>
         </ul>
         <ul>
           <li><h3>2021/02/01<br>13:00-13:30</h3></li>
-          <li><img src="./img/threepigs.jpg" alt="" /></li>
+          <div class="resverpics_3d">
+            <ul>
+              <li class="top"></li>
+              <li class="left"></li>
+              <li class="right"></li>
+              <li class="bottom"></li>
+              <li class="front front2"></li>
+              <li class="back">            
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quo perspiciatis assumenda culpa totam repellendus neque obcaecati. Dolor doloribus debitis alias ullam, quo reiciendis totam architecto qui, illo, sapiente similique.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quo perspiciatis assumenda culpa.</p>
+              </li>
+            </ul>
+          </div>
           <li><button>預約</button></li>
         </ul>
         <ul>
           <li><h3>2021/02/01<br>13:00-13:30</h3></li>
-          <li><img src="./img/story.jpg" alt="" /></li>
+          <div class="resverpics_3d">
+            <ul>
+              <li class="top"></li>
+              <li class="left"></li>
+              <li class="right"></li>
+              <li class="bottom"></li>
+              <li class="front front3"></li>
+              <li class="back">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quo perspiciatis assumenda culpa totam repellendus neque obcaecati. Dolor doloribus debitis alias ullam, quo reiciendis totam architecto qui, illo, sapiente similique.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quo perspiciatis assumenda culpa.
+                </p>
+              </li>
+            </ul>
+          </div>
           <li><button>預約</button></li>
         </ul>
       </div>
@@ -175,6 +209,7 @@
     crossorigin="anonymous">
     </script>
     <script src="./JS/hambergur.js"></script>
+    <script src="./JS/reservation.js"></script>
     <script> </script>
   </body>
 </html>

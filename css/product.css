@@ -262,16 +262,34 @@ span{
  letter-spacing: 5px;
 }
 
+.product-items .item input[type="value"]{
+  width: 50px;
+  height: 5px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.product-items .item button{
+  padding: 5px;
+  border:transparent;
+  outline: none;
+  background-color: transparent;
+}
+
 .fa-minus-square{
-  padding: 0 20px;
   color: red;
   cursor: pointer;
+  font-size: 20px;
 }
 
 .fa-plus-circle{
-  padding: 0 20px;
   color:green;
   cursor: pointer;
+  font-size: 20px;
 }
 
 
