@@ -276,7 +276,7 @@ a {
   width: 80px;
   position: absolute;
   bottom: 0px;
-  left: 25%;
+  left: 10%;
   font-size: 0;
 }
 
@@ -307,7 +307,6 @@ a {
 }
 
 .castle{
-  width: 80px;
   position: absolute;
   bottom: 0px;
   left: 50%;
@@ -316,19 +315,24 @@ a {
 }
 
 .castle img{
-  height: 80px;
+  height: 400px;
 }
 
-.airballon{
-  background-image: url(../img/airballon.png);
-  width: 163px;
-  height: 212px;
+.airballon img{
+  width: 250px;
   position: absolute;
-  top: 150px;
-  left: 960px;
-  transform: scale(0.3);
+  top: 250px;
+  left: 60%;
   z-index: -1;
   animation: move 10s linear infinite alternate
+}
+
+@media (max-width:576px){
+  .airballon img{
+    position: absolute;
+    top: 250px;
+    left: 50%;
+  }
 }
 
 @keyframes move {
@@ -344,8 +348,9 @@ a {
 
 /* 字體動畫 */
 .welcome {
-  margin-top: 100px;
+  margin-top: 200px;
   text-align: center; 
+  transform: scale(1.5);
 }
 
 .welcome .path1 {
@@ -409,7 +414,7 @@ a {
 .cloud3 {
   position: absolute;
   top: 490px;
-  left: 920px;
+  left: 70%;
   animation: cloudmove 10s linear infinite forwards;
 }
 .cloud4 {
@@ -487,8 +492,9 @@ a {
   text-align: center;
 }
 .ourstory-top h3 {
+  width: 350px;
+  margin: 30px auto;
   text-align: center;
-  margin: 30px 0px;
 }
 
 .ourstory-down {
@@ -1235,7 +1241,7 @@ a {
   .news-circle{
     position: absolute;
     bottom: -80px;
-    left: 50%;
+    left: 30%;
   }
 }
 
@@ -1243,7 +1249,7 @@ a {
   .news-circle{
     position: absolute;
     bottom: -80px;
-    left: 50%;
+    left: 30%;
   }
 }
 
