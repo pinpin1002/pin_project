@@ -2,11 +2,9 @@
 
 AOS.init({once:true});  
 
+$(window).on("load", function(){
+  setTimeout(function(){
+    $(".white").fadeOut("slow");
+  }, 1000);
+});
 
-// slick
-// $('.autoplay').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   autoplay: true,
-//   autoplaySpeed: 1000,
-// });
