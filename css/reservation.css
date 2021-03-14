@@ -212,6 +212,8 @@ body h3{
 	width: 50px;
 	height: 300px;
 	transform-origin: left center;
+  writing-mode:vertical-lr;
+  
 }
 
 .resverpics .resverpics_3d li.right{
@@ -255,7 +257,7 @@ body h3{
 
 
 
-.resverpics .resverpics_3d.flip .back{
+.resverpics .resverpics_3d .back{
   background-color: #e5e5e5;
   padding: 10px;
   height: 330px;
@@ -266,5 +268,14 @@ body h3{
   left: -14px;
   z-index: 4;
   transform: translate3d(0,0,-50px);
+  text-align: left;
 }
 
+
+.resverpics .resverpics_3d .back .shy{
+  background-image: url(../img/scare.gif);
+  height: 210px;
+  width: 310px;
+  background-size: cover;
+  margin: 70px auto 0;
+}
