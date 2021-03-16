@@ -116,6 +116,7 @@ h1{
 
 .order-confirm_main .item1{
   flex-basis: 10px;
+  display: flex;
 }
 
 .order-confirm_main .item1.cancel{
@@ -185,7 +186,7 @@ h1{
   background-color: transparent;
   border:none;
   outline:none;
-  width: 50px;
+  width: 35px;
   font-size: 16px;
   text-align: center;
 }
