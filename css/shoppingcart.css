@@ -185,7 +185,7 @@ h1{
   background-color: transparent;
   border:none;
   outline:none;
-  width: 30px;
+  width: 50px;
   font-size: 16px;
   text-align: center;
 }
@@ -250,7 +250,16 @@ h1{
 }
 }
 
-
+.order-confirm_check input[type="text"]{
+  background-color: transparent;
+  border:none;
+  outline:none;
+  width: 80px;
+  font-size: 16px;
+  text-align: center;
+  font-size: 24px;
+  color:green;
+}
 
 .order-confirm_check input[type="submit"]{
   display: block;
@@ -300,4 +309,9 @@ h1{
 .item1.cancel span:first-child{
   display: none;
 }
+}
+
+
+i{
+  cursor: pointer;
 }

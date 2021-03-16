@@ -1,4 +1,5 @@
 @import url(./reset.css);
+
 body {
   width: 100%;
   background-color: #8cd2ca;
@@ -1363,9 +1364,4 @@ a {
   opacity: .5;
   color: red;
   -webkit-font-smoothing: antialiased;
-}
-
-
-
-
-
+};

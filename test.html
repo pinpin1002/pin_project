@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+  <style>
+    #flipbook div {
+        text-align: center;
+        line-height: 500px;
+    }
+    .backward,
+    .forward{
+        width: 40px;
+        height: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="flipbook">
+    <div style="background: pink;" class="hard"><h1>童話故事</h1> </div> 
+    <div style="background: olivedrab;" class="hard"> </div>
+    <div style="background: palegoldenrod;"> <input type="textarea"> </div>
+    <div style="background: paleturquoise;"> Page 2 </div>
+    <div style="background: plum;"> Page 3 </div>
+    <div style="background: mediumaquamarine;"> Page 4 </div>
+    <div style="background: greenyellow;"> Page 5 </div>
+    <div style="background: darkkhaki;"> Page 6 </div>
+    <div style="background: aqua;" class="hard"> </div>
+    <div style="background: teal;" class="hard"> </div>
+  </div>
+
+  <!-- 前一頁 -->
+  <img src="img/backward.png" class="backward" onclick="backwardPage()">
+  <!-- 后一頁 -->
+  <img src="img/forward.png" class="forward" onclick="forwarPage()">
+
+
+  <script type="text/javascript" src="./vendors/jquery/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="./vendors/turnjs/turn.js"></script>
+  <script>
+  $("#flipbook").turn({
+    width: 1000,
+    height: 500,
+    acceleration: true, // 是否加速，對于觸摸屏的設備，這個值必須為true
+    autoCenter: true, // 是否居中 默認值false
+    direction: "ltr", // 翻書方向，值為rtl / ltr（3種寫法）
+    display: 'double', // 顯示單頁or雙頁,默認值是double (如果single, class為hard的div首末各一個就可以)
+    
+  });
+
+  function backwardPage() {
+      $("#flipbook").turn("previous");
+  }
+
+  function forwarPage() {
+      $("#flipbook").turn("next");
+  }
+  </script>
+</body>
+</html>
+
+
