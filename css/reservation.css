@@ -199,7 +199,7 @@ body h3{
 
 
 .resverpics .resverpics_3d li.top{
-	background-color:  #e5e5e5;
+	background-image: url(../img/bookcover.jpg);
 	width: 300px;
 	height: 50px;
 	transform: rotate3d(-1,0,0,90deg);
@@ -207,7 +207,7 @@ body h3{
 }
 
 .resverpics .resverpics_3d li.left{
-	background-color: #e5e5e5;
+	background-image: url(../img/bookcover.jpg);
 	transform: rotate3d(0,1,0,90deg);
 	width: 50px;
 	height: 300px;
@@ -217,7 +217,7 @@ body h3{
 }
 
 .resverpics .resverpics_3d li.right{
-	background-color: #e5e5e5;
+	background-image: url(../img/bookcover.jpg);
 	transform: rotate3d(0,-1,0,90deg);
 	width: 50px;
 	height: 300px;
@@ -226,7 +226,7 @@ body h3{
 }
 
 .resverpics .resverpics_3d li.bottom{
-  background-color: #e5e5e5;
+  background-image: url(../img/bookcover.jpg);
 	z-index: 3;
 	width: 300px;
 	height: 50px;
@@ -258,6 +258,7 @@ body h3{
 
 
 .resverpics .resverpics_3d .back{
+  background-image: url(../img/bookcover.jpg);
   background-color: #e5e5e5;
   padding: 10px;
   height: 330px;

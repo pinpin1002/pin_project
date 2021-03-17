@@ -74,9 +74,33 @@
 
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  transition: background-image 1.3s;
+  transition: background-image 0.5s;
 
   position: relative;
+}
+
+.space-bigpics.bgi1{
+  background-image: url(../img/space1.jpg);
+}
+
+.space-bigpics.bgi2{
+  background-image: url(../img/space2.jpg);
+}
+
+.space-bigpics.bgi3{
+  background-image: url(../img/space3.jpg);
+}
+
+.space-bigpics.bgi4{
+  background-image: url(../img/space4.jpg);
+}
+
+.space-bigpics.bgi5{
+  background-image: url(../img/space5.jpg);
+}
+
+.space-bigpics.bgi6{
+  background-image: url(../img/space6.jpg);
 }
 
 @media (min-width:991px) and (max-width:1199px){
