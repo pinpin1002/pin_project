@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" href="./vendors/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="./vendors/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
     <link rel="stylesheet" href="./css/reservation.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/header.css">
@@ -100,7 +102,7 @@
         </ul>
         <ul>
           <li><h3>日期</h3></li>
-          <li><input type="date" min="2021-02-25"/></li>
+          <li><input type="text" id="datepicker" placeholder="選擇日期"></li>
         </ul>
       </div>
 
@@ -169,43 +171,42 @@
         <img class="m4" src="./img/m4.png" alt="" />
         <img class="m5" src="./img/m5.png" alt="" />
         <img class="m6" src="./img/m6.png" alt="" />
-        </div>
+      </div>
   
       <footer>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2477183519422!2d121.22282561414355!3d24.957685184008167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ea50c732a5%3A0x1b5e6ee66e9fec49!2z57ev6IKyVGliYU1l6ZmE6Kit5Lit5aOi6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1612595258593!5m2!1szh-TW!2stw"
-          frameborder="0"
-          style="border: 0"
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
-        ></iframe>
-  
-        <div class="contactinfo">
-          <a href="#"
-            ><img src="./img/facebook.png" alt="" width="30px" height="30px"
-          /></a>
-          <a href="#"
-            ><img src="./img/instagram.png" alt="" width="30px" height="30px"
-          /></a>
-          <a href="#"
-            ><img src="./img/LINE_logo.png" alt="" width="30px" height="30px"
-          /></a>
-          <a href="#"
-            ><img src="./img/youtube.png" alt="" width="30px" height="30px"
-          /></a>
-          <ul>
-          <li>營業時間:周一至周六 10:00-19:00</li>
-          <li>聯絡電話: 02-1234-8888</li>
-          <li>地 址 : 台北市鳳山區文化一路90號</li>
-          <li>© 2021 Tibame 教學用 非營利</li>
-          </ul>
-          <img class="footer-pics" src="./img/bc3.png" alt="" />
-        </div>
-  
-          
-  
-      </footer>
+        
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2477183519422!2d121.22282561414355!3d24.957685184008167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ea50c732a5%3A0x1b5e6ee66e9fec49!2z57ev6IKyVGliYU1l6ZmE6Kit5Lit5aOi6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1612595258593!5m2!1szh-TW!2stw"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+    
+          <div class="contactinfo">
+            <a href="#"
+              ><img src="./img/facebook.png" alt="" width="30px" height="30px"
+            /></a>
+            <a href="#"
+              ><img src="./img/instagram.png" alt="" width="30px" height="30px"
+            /></a>
+            <a href="#"
+              ><img src="./img/LINE_logo.png" alt="" width="30px" height="30px"
+            /></a>
+            <a href="#"
+              ><img src="./img/youtube.png" alt="" width="30px" height="30px"
+            /></a>
+            <ul>
+            <li>營業時間:周一至周六 10:00-19:00</li>
+            <li>聯絡電話: 02-1234-8888</li>
+            <li>地 址 : 台北市鳳山區文化一路90號</li>
+            <li>© 2021 Tibame 教學用 非營利</li>
+            </ul>
+            <img class="footer-pics" src="./img/bc3.png" alt="" />
+          </div>
+        
+        </footer>
     </div>
 
     <script
@@ -215,6 +216,7 @@
     </script>
     <script src="./JS/hambergur.js"></script>
     <script src="./JS/reservation.js"></script>
-    <script> </script>
+    <script src="./vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./vendors/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
   </body>
 </html>
