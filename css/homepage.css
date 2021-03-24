@@ -220,10 +220,10 @@ a {
 }
 
 .logo img{
-  width: 150px;
+  width: 130px;
   position: fixed;
   top: 30px;
-  left: 30px;
+  left: 10px;
   z-index: 100;
 }
 
