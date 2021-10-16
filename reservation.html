@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" href="./vendors/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="./vendors/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
     <link rel="stylesheet" href="./css/reservation.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/header.css">
@@ -48,7 +50,7 @@
       </div>
       <div class="hambergur-section">
          <div class="logo">
-            <img src="./img/Logo/米粒.png" alt="">
+           <img src="./img/Logo/logo1.png" alt="">
          </div>
         <div class="hamburger-btn">
           <span class="line"></span>
@@ -92,15 +94,15 @@
       <div class="resverbtn">
         <ul>
           <li><h3>大人人數</h3></li>
-          <li><input type="number" placeholder="大人1位" /></li>
+          <li><input type="number" placeholder="大人1位" min="1"/></li>
         </ul>
         <ul>
           <li><h3>小孩人數<span>12歲以下</span></h3></li>
-          <li><input type="number" placeholder="小孩1位" /></li>
+          <li><input type="number" placeholder="小孩1位" min="1" /></li>
         </ul>
         <ul>
           <li><h3>日期</h3></li>
-          <li><input type="date" min="2021-02-25"/></li>
+          <li><input type="text" id="datepicker" placeholder="選擇日期"></li>
         </ul>
       </div>
 
@@ -108,17 +110,56 @@
       <div class="resverpics">
         <ul>
           <li><h3>2021/02/01<br>13:00-13:30</h3></li>
-          <li><img src="./img/redhood.png" alt="" /></li>
+          <div class="resverpics_3d">
+            <ul>
+              <li class="top"></li>
+              <li class="left"></li>
+              <li class="right"></li>
+              <li class="bottom"></li>
+              <li class="front front1"></li>
+              <li class="back">
+                <p>主講者:王美美</p>
+                <p>故事時間:30分鐘</p>
+                <p>簡介:</p>
+                <p>有個小女孩時常帶著她奶奶在生日時送她的一頂小紅帽。有一天，媽媽讓她把糕餅送給住在另一個村莊的生病的奶奶。小紅帽於是從家裏出發了。森林裏有一隻大野狼，得知了小紅帽將要去的地方。大野狼這時先趕到了小紅帽奶奶家並把奶奶給吞了。狡猾的大野狼穿上了奶奶的衣服躺在床上。當小紅帽來時沒有認出大野狼，也被牠吞了下去。</p>
+              </li>
+            </ul>
+          </div>
           <li><button>預約</button></li>
         </ul>
         <ul>
-          <li><h3>2021/02/01<br>13:00-13:30</h3></li>
-          <li><img src="./img/threepigs.jpg" alt="" /></li>
+          <li><h3>2021/02/01<br>14:00-14:30</h3></li>
+          <div class="resverpics_3d">
+            <ul>
+              <li class="top"></li>
+              <li class="left"></li>
+              <li class="right"></li>
+              <li class="bottom"></li>
+              <li class="front front2"></li>
+              <li class="back">            
+                <p>主講者:王美美</p>
+                <p>故事時間:30分鐘</p>
+                <p>簡介:</p>
+                <p>有個小女孩時常帶著她奶奶在生日時送她的一頂小紅帽。有一天，媽媽讓她把糕餅送給住在另一個村莊的生病的奶奶。小紅帽於是從家裏出發了。森林裏有一隻大野狼，得知了小紅帽將要去的地方。大野狼這時先趕到了小紅帽奶奶家並把奶奶給吞了。狡猾的大野狼穿上了奶奶的衣服躺在床上。當小紅帽來時沒有認出大野狼，也被牠吞了下去。</p>
+              </li>
+            </ul>
+          </div>
           <li><button>預約</button></li>
         </ul>
         <ul>
-          <li><h3>2021/02/01<br>13:00-13:30</h3></li>
-          <li><img src="./img/book2.JPG" alt="" /></li>
+          <li><h3>2021/02/01<br>15:00-15:30</h3></li>
+          <div class="resverpics_3d">
+            <ul>
+              <li class="top"></li>
+              <li class="left"></li>
+              <li class="right"></li>
+              <li class="bottom"></li>
+              <li class="front front3"></li>
+              <li class="back">
+                <div class="shy"></div>
+              </li>
+            </ul>
+          </div>
           <li><button>預約</button></li>
         </ul>
       </div>
@@ -131,40 +172,41 @@
         <img class="m5" src="./img/m5.png" alt="" />
         <img class="m6" src="./img/m6.png" alt="" />
       </div>
-
+  
       <footer>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2477183519422!2d121.22282561414355!3d24.957685184008167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ea50c732a5%3A0x1b5e6ee66e9fec49!2z57ev6IKyVGliYU1l6ZmE6Kit5Lit5aOi6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1612595258593!5m2!1szh-TW!2stw"
-          frameborder="0"
-          style="border: 0"
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
-        ></iframe>
-
-        <div class="contactinfo">
-          <a href="#"
-            ><img src="./img/facebook.png" alt="" width="30px" height="30px"
-          /></a>
-          <a href="#"
-            ><img src="./img/instagram.png" alt="" width="30px" height="30px"
-          /></a>
-          <a href="#"
-            ><img src="./img/LINE_logo.png" alt="" width="30px" height="30px"
-          /></a>
-          <a href="#"
-            ><img src="./img/youtube.png" alt="" width="30px" height="30px"
-          /></a>
-          <ul>
-          <li>營業時間:周一至周六 10:00-19:00</li>
-          <li>聯絡電話: 02-1234-8888</li>
-          <li>地 址 : 台北市鳳山區文化一路90號</li>
-          <li>© 2021 Tibame 教學用 非營利</li>
-          </ul>
-        </div>
-        <img class="footer-pics" src="./img/bc3.png" alt="" />
-
-      </footer>
+        
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2477183519422!2d121.22282561414355!3d24.957685184008167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ea50c732a5%3A0x1b5e6ee66e9fec49!2z57ev6IKyVGliYU1l6ZmE6Kit5Lit5aOi6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1612595258593!5m2!1szh-TW!2stw"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+    
+          <div class="contactinfo">
+            <a href="#"
+              ><img src="./img/facebook.png" alt="" width="30px" height="30px"
+            /></a>
+            <a href="#"
+              ><img src="./img/instagram.png" alt="" width="30px" height="30px"
+            /></a>
+            <a href="#"
+              ><img src="./img/LINE_logo.png" alt="" width="30px" height="30px"
+            /></a>
+            <a href="#"
+              ><img src="./img/youtube.png" alt="" width="30px" height="30px"
+            /></a>
+            <ul>
+            <li>營業時間:周一至周六 10:00-19:00</li>
+            <li>聯絡電話: 02-1234-8888</li>
+            <li>地 址 : 台北市鳳山區文化一路90號</li>
+            <li>© 2021 Tibame 教學用 非營利</li>
+            </ul>
+            <img class="footer-pics" src="./img/bc3.png" alt="" />
+          </div>
+        
+        </footer>
     </div>
 
     <script
@@ -172,25 +214,9 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
     crossorigin="anonymous">
     </script>
-
-    <script>
-
-        $(document).ready(function(){
-
-          $('.hamburger-btn').click(function(){
-            $('.hamburger').toggle(800);
-          });
-          $('.hamburger-btn').click(function(){
-            $('.hamburger-btn').toggleClass('open')
-          })
-          
-          $('.hamburger-btn').click(function(){
-            $('.mask').toggleClass('on')
-          })
-
-          });
-
-    </script>
-    <script> </script>
+    <script src="./JS/hambergur.js"></script>
+    <script src="./JS/reservation.js"></script>
+    <script src="./vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./vendors/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
   </body>
 </html>

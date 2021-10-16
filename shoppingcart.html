@@ -55,7 +55,7 @@
       </div>
       <div class="hambergur-section">
          <div class="logo">
-            <img src="./img/Logo/米粒.png" alt="">
+            <img src="./img/Logo/logo1.png" alt="">
          </div>
         <div class="hamburger-btn">
           <span class="line"></span>
@@ -95,7 +95,7 @@
         <!-- 購物車 -->
       <h1>購物車</h1>
       <div class="order-confirm_header">
-        <input type="checkbox">
+        <input type="checkbox" class="checkbox all_checkbox">
         <div class="goods">商品</div>
         <div class="price">單價</div>
         <div>數量</div>
@@ -105,7 +105,7 @@
 
       <div class="order-confirm_main">
         <div class="item">
-          <input type="checkbox">
+          <input type="checkbox" class="check_item" checked>
           <div class="goods">
               <div class="pic">
                 <img src="./img/b7.jpg" alt="">
@@ -118,24 +118,40 @@
                 <p>作　　　者:鄧不利多</p>
               </div>
           </div>
-          <div class="item1"><p>$100元</p></div>
-          <div class="item1"><p>2</p></div>
-          <div class="item1"><p>$200元</p></div>
           <div class="item1">
+              <span>$</span>
+              <input type="text" value="100" class="itemprice" disabled>
+          </div>
+          <div class="item1">
+            <button>
+              <i class="fa fa-minus-square" aria-hidden="true">
+              </i>
+            </button>
+            <input type="text" value="8" class="itemqty" disabled>
+            <button>
+              <i class="fa fa-plus-circle" aria-hidden="true">
+              </i>
+            </button>
+          </div>
+          <div class="item1 sub_total" >
+            <span>$</span>
+            <input type="text" value="800" disabled class="result">
+          </div>
+          <div class="item1 cancel">
             <span>取消</span>
-            <span class="material-icons">
+            <span class="material-icons del">
             delete_outline
-            </span>
+            </span> 
           </div>
         </div>
 
         <div class="item">
-          <input type="checkbox">
+          <input type="checkbox" class="check_item">
           <div class="goods">
               <div class="pic">
                 <img src="./img/b7.jpg" alt="">
               </div>
-              <div class="text">
+              <div class="text" >
                 <p>書　　　名:小紅帽</p>
                 <p>作　　　者:鄧不利多</p>
                 <p>出　版　社:東方美人</p>
@@ -143,19 +159,35 @@
                 <p>作　　　者:鄧不利多</p>
               </div>
           </div>
-          <div class="item1"><p>$100元</p></div>
-          <div class="item1"><p>2</p></div>
-          <div class="item1"><p>$200元</p></div>
           <div class="item1">
+              <span>$</span>
+              <input type="text" value="300" class="itemprice" disabled>
+          </div>
+          <div class="item1">
+            <button>
+              <i class="fa fa-minus-square" aria-hidden="true">
+              </i>
+            </button>
+            <input type="text" value="1" class="itemqty" disabled>
+            <button>
+              <i class="fa fa-plus-circle" aria-hidden="true">
+              </i>
+            </button>
+          </div>
+          <div class="item1 sub_total" >
+            <span>$</span>
+            <input type="text" value="300" disabled class="result">
+          </div>
+          <div class="item1 cancel">
             <span>取消</span>
-            <span class="material-icons">
+            <span class="material-icons del">
             delete_outline
-            </span>
+            </span> 
           </div>
         </div>
 
         <div class="item">
-          <input type="checkbox">
+          <input type="checkbox" class="check_item">
           <div class="goods">
               <div class="pic">
                 <img src="./img/b7.jpg" alt="">
@@ -168,18 +200,35 @@
                 <p>作　　　者:鄧不利多</p>
               </div>
           </div>
-          <div class="item1"><p>$100元</p></div>
-          <div class="item1"><p>2</p></div>
-          <div class="item1"><p>$200元</p></div>
           <div class="item1">
+              <span>$</span>
+              <input type="text" value="199" class="itemprice" disabled>
+          </div>
+          <div class="item1">
+            <button>
+              <i class="fa fa-minus-square" aria-hidden="true">
+              </i>
+            </button>
+            <input type="text" value="2" class="itemqty" disabled>
+            <button>
+              <i class="fa fa-plus-circle" aria-hidden="true">
+              </i>
+            </button>
+          </div>
+          <div class="item1 sub_total" > 
+            <span>$</span>
+            <input type="text" value="398" disabled class="result">
+          </div>
+          <div class="item1 cancel">
             <span>取消</span>
-            <span class="material-icons">
+            <span class="material-icons del">
             delete_outline
-            </span>
+            </span> 
           </div>
         </div>
+        
         <div class="order-confirm_check">
-          <h3>總計金額：$600元</h3>
+          <h3>總計金額：$<input type="text" value="0" class="total_price"></h3>
           <input type="submit" value="結帳">
         </div>
         
@@ -193,9 +242,8 @@
         <img class="m4" src="./img/m4.png" alt="" />
         <img class="m5" src="./img/m5.png" alt="" />
         <img class="m6" src="./img/m6.png" alt="" />
-      </div>
-      
-
+        </div>
+  
       <footer>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2477183519422!2d121.22282561414355!3d24.957685184008167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ea50c732a5%3A0x1b5e6ee66e9fec49!2z57ev6IKyVGliYU1l6ZmE6Kit5Lit5aOi6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1612595258593!5m2!1szh-TW!2stw"
@@ -205,8 +253,7 @@
           aria-hidden="false"
           tabindex="0"
         ></iframe>
-
-
+  
         <div class="contactinfo">
           <a href="#"
             ><img src="./img/facebook.png" alt="" width="30px" height="30px"
@@ -226,11 +273,19 @@
           <li>地 址 : 台北市鳳山區文化一路90號</li>
           <li>© 2021 Tibame 教學用 非營利</li>
           </ul>
+          <img class="footer-pics" src="./img/bc3.png" alt="" />
         </div>
-        <img class="footer-pics" src="./img/bc3.png" alt="" />
-
+  
+          
+  
       </footer>
     </div>
-    <script> </script>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+    
+    <script src="./JS/shoppingcart.js"></script>
+    <script src="./JS/hambergur.js"></script>
   </body>
 </html>

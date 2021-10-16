@@ -1,0 +1,97 @@
+@import url(./reset.css);
+
+body h1{
+	font-size: 38px;
+}
+
+/* 影片 */
+
+.top-main {
+	text-align: center;
+}
+
+.top-main{
+	background-image: url(../img/970d88106605615.5f936d86e082d.png);
+	width: 100%;
+	height: 800px;
+	background-size: cover;
+	background-position: center center;
+}
+
+.aside{
+	width: 15%;
+	float: left;
+}
+
+.aside .text ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.aside .text ul li{
+	background-repeat: no-repeat;
+	background-position: 0px 10px;
+	width: 80px;
+	outline:none;
+	padding: 5px;
+	margin: 5px;
+	resize: none
+}
+
+.aside .text ul li img{
+	width: 100px;
+}
+
+
+.aside .bc ul li img{
+	width: 100%;
+	padding: 5px;
+}
+
+
+.right{
+	width:85%;
+	float: right;
+	height: 400px;
+	display:flex;
+}
+
+.right .onleft{
+	width: 50%;
+	border:3px solid yellow;
+	
+}
+.right .onright{
+	width: 50%;
+	border:3px solid yellow;
+}
+
+.right .onleft:hover, .right .onright:hover {
+	border:3px dotted blue;
+}
+
+.textarea{
+	resize: none;
+}
+
+
+#flipbook{
+	margin: 0 auto;
+}
+
+#flipbook div {
+	text-align: center;
+	line-height: 500px;
+}
+.backward,
+.forward{
+	width: 40px;
+	height: 40px;
+}
+
+
+.clear{
+	clear: both;
+}
+

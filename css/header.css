@@ -7,9 +7,6 @@ body {
 	font-weight: bold;
 }
 
-.wrapper {
-}
-
 h1 {
   font-family: "Stick";
   font-size: 58px;
@@ -42,9 +39,9 @@ a {
 	padding-top: 40px;
 }
 
-@media (max-width:700px){
+@media (max-width:768px){
   .top-header{
-    height: 80px;
+    display: none;
   }
 }
 
@@ -59,7 +56,7 @@ a {
   right: 50px;
 }
 
-@media (max-width:700px){
+@media (max-width:768px){
   .log{
     visibility: hidden;
   } 
@@ -73,7 +70,7 @@ a {
   position: relative;
 }
 
-@media (max-width:700px){
+@media (max-width:768px){
   .top-header ul{
     visibility: hidden;
   } 
@@ -144,7 +141,7 @@ a {
   z-index: 97;
 }
 
-@media (max-width:700px){
+@media (max-width:768px){
   .hambergur-section{
     display: block;
   }
@@ -202,19 +199,16 @@ a {
 }
 
 
-
-
 .hamburger .hamburger-btn_item{
   position: relative;
   margin-top: 40px;
 }
 
 .logo img{
-  width: 80px;
-  height: 80px;
+  width: 130px;
   position: fixed;
   top: 30px;
-  left: 30px;
+  left: 10px;
   z-index: 100;
 }
 

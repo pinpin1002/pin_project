@@ -1,3 +1,7 @@
+.forcenter{
+  width: 1000px;
+}
+
 footer {
   width: 100%;
   background-color: #34866e;
@@ -97,7 +101,7 @@ footer iframe {
   position: relative;
   top: 0;
   right:0px;
-  margin-top: 300px;
+  margin-top: 250px;
 }
 
 @media (min-width:1075px) and (max-width:1200px){
@@ -105,7 +109,7 @@ footer iframe {
     position: relative;
     top: 0;
     right:30px;
-    margin-top: 300px;
+    margin-top: 250px;
   }
 }
 
@@ -114,7 +118,7 @@ footer iframe {
     position: relative;
     top: 0;
     right:100px;
-    margin-top: 300px;
+    margin-top: 250px;
   }
 }
 
